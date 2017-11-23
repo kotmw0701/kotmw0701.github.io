@@ -2096,7 +2096,7 @@
 
 	#header {
 		position: relative;
-		margin: auto;
+		background: url("../../images/header_1.png") no-repeat;
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2110,6 +2110,7 @@
 			display: inline-block;
 			vertical-align: middle;
 			height: 100%;
+			background-color: rgba(200, 200, 200, 0.5);
 		}
 
 		#header .inner {
@@ -2119,40 +2120,22 @@
 			display: inline-block;
 			vertical-align: middle;
 		}
-		
-		#header img {
-			width: 50%;
-			animation-name: images;
-			animation-duration: 10s;
-			animation-iteration-count: infinite;
-			opacity: 0;
-		}
-		
-		#header .img1 {
-			display: block;
-			margin: 0 auto;
-		}
-		
-		#header .img2 {
-			animation-delay: 5s;
-			position: absolute;
-			top: 0;
-			left: 25%;
-		}
 
 		#header header {
 			display: inline-block;
 		}
 
 			#header header > p {
+				font-weight: bold;
 				font-size: 1.25em;
 				margin: 0;
 			}
 
 		#header h1 {
-			color: #000;
-			font-size: 3em;
+			color: #fff;
+			font-size: 4em;
 			line-height: 1em;
+			-webkit-text-stroke: 2px #000;
 		}
 
 			#header h1 a {
@@ -2194,23 +2177,6 @@
 			font-size: 4em;
 		}
 
-@keyframes images {
-	0% {
-		opacity: 0;
-	}
-	
-	12.5% {
-		opacity: 1;
-	}
-
-	37.5% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-}
-
 
 /* Nav */
 
@@ -2223,6 +2189,7 @@
 		padding: 1.5em 0 1.5em 0;
 		z-index: 1;
 		overflow: hidden;
+		font-weight: bold;
 	}
 
 		#nav > ul {
