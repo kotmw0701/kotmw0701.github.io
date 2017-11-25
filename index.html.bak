@@ -39,10 +39,8 @@ span {
   padding-right: 5px;
   margin-right: 4px;
 }
-
-a:link, a:visited {
-  color: aqua;
-}
+      
+a:link, a:visited{ color: #00ffff; }
 
 #header {
   width: 960px;
@@ -78,13 +76,6 @@ a:link, a:visited {
   color: #eeeeee;
 }
 
-#footer {
-  text-align: center;
-  background-color: #333333;
-  height: 50px;
-  padding-top: 30px;
-}
-
 .containts {
   padding-left: 1em;
 }
@@ -105,15 +96,9 @@ a:link, a:visited {
       <h3> 自己紹介 </h3>
       <div class="containts">
         <p> 色々とプログラミングやらゲームやらを嗜んでます。 <br>
-          名前が不安定なのは気にしたら負けなのです、すでに固定してる人はそれで呼んでくれて問題ないです。<br>
-          基本的には<b>ことさん</b>とか呼ばれてます。<br>
           (アイコンが色々なところで違うのでここでは割愛)</p>
         <table>
           <tbody>
-            <tr>
-              <td>名前(不安定)</td>
-              <td><span>ことむー(kotmw)</span> <span>モドロフ(motlof)</span></td>
-            </tr>
             <tr>
               <td class="mono">趣味</td>
               <td><span>マンガ</span> <span>アニメ</span> <span>音ゲー</span> <span>Minecraft</span>
@@ -141,7 +126,6 @@ a:link, a:visited {
       </div>
       <h5> 気長に編集中... </h5>
     </div>
-    <!--Footer-->
-    <div id="footer">©2017 そこら辺の雑記帳 motlof_kotmw</div>
+    
   </body>
 </html>
