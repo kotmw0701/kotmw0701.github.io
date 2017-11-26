@@ -10,20 +10,20 @@
     <title>そこら辺の雑記帳</title>
     <style type="text/css">
 body {
+  width: 100%;
   background: url("images/back.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: sans-serif;
   position: relative;
   z-index: 0;
   overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: 0px;/*ここ何故か0px指定しないと左に余白が出来る*/
 }
 
 /*:beforeにぼかし効果を設定する*/
 body:before{
   content: '';
-  font-family: "メイリオ";
   background: inherit;/*.bgImageで設定した背景画像を継承する*/
   -webkit-filter: blur(20px);
   -moz-filter: blur(20px);
@@ -32,10 +32,10 @@ body:before{
   filter: blur(20px);
   position: absolute;
   /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
   z-index: -1;/*重なり順序を一番下にしておく*/
 }
 
