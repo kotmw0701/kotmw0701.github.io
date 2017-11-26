@@ -2,18 +2,53 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+
+      rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+
+      crossorigin="anonymous">
     <title>そこら辺の雑記帳</title>
     <style type="text/css">
 body {
-  width: 100%;
-  background-color: #222222;
+  background: url("images/back.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/*:beforeにぼかし効果を設定する*/
+body:before{
+  content: '';
+  font-family: "メイリオ";
+  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  z-index: -1;/*重なり順序を一番下にしておく*/
 }
 
 h3 {
-  background-color: #222222;
+  background-color: rgba(200, 200, 200, 0.7);
   margin-right: 5px;
   margin-left: 5px;
   margin-top: -2px;
+}
+
+h1 {
+  padding-top: 20px;
+  margin-top: -5px;
 }
 
 table {
@@ -29,23 +64,24 @@ table {
 }
 
 span {
-  background-color: #006600;
+  background-color: #009900;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
   font-size: 12px;
+  font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
   margin-right: 4px;
 }
 
 a:link, a:visited {
-  color: aqua;
+  color: green;
 }
 
 #header {
-  width: 960px;
+  width: 200%;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
@@ -53,9 +89,12 @@ a:link, a:visited {
   font-size: 40px;
   font-weight: normal;
   text-align: left;
-  font-family: "メイリオ";
   text-indent: 20px;
-  color: #eeeeee;
+  background-color: rgba(220, 220, 220, 0.75);
+}
+
+#header .header {
+	width: 750px;
 }
 
 #header .description {
@@ -69,18 +108,17 @@ a:link, a:visited {
 }
 
 #main {
-  width: 960px;
+  width: 800px;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  background-color: black;
-  color: #eeeeee;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #footer {
   text-align: center;
-  background-color: #333333;
+  background-color: rgba(200, 200, 200, 0.9);
   height: 50px;
   padding-top: 30px;
 }
@@ -101,7 +139,10 @@ a:link, a:visited {
     </div>
     <hr>
     <!--Containts-->
-    <div id="main"><br>
+    <div id="main">
+      <header class="containts">
+        <h1> トップページ </h1>
+      </header>
       <h3> 自己紹介 </h3>
       <div class="containts">
         <p> 色々とプログラミングやらゲームやらを嗜んでます。 <br>
@@ -131,17 +172,22 @@ a:link, a:visited {
             </tr>
             <tr>
               <td>リンク各種</td>
-              <td><a href="https://twitter.com/motlof_kotmw" target="_blank">@motlof_kotmw</a>
-                <a href="https://github.com/kotmw0701" target="_blank">GitHub</a>
-                <br>
+              <td><a href="https://twitter.com/motlof_kotmw" target="_blank"><i
+
+                    class="fa fa-twitter" aria-hidden="true">motlof_kotmw</i></a>
+                <a href="https://github.com/kotmw0701" target="_blank"><i class="fa fa-github"
+
+                    aria-hidden="true">GitHub</i></a> <br>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <h5> 気長に編集中... </h5>
+      <h5> 楽しくなってきた♪<br>
+      </h5>
     </div>
     <!--Footer-->
     <div id="footer">©2017 そこら辺の雑記帳 motlof_kotmw</div>
+    
   </body>
 </html>
