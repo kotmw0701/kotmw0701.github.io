@@ -11,6 +11,7 @@
     <style type="text/css">
 body {
   width: 100%;
+  min-width: 800px;
   background: url("images/back.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
