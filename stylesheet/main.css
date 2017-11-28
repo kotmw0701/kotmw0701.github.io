@@ -1,0 +1,127 @@
+﻿body {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../images/back.png");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  position: fixed;
+  z-index: 0;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+h1 {
+  padding-top: 20px;
+  margin-top: -5px;
+}
+
+table {
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-collapse: collapse;
+  border-top-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+  border-left-color: black;
+}
+
+span {
+  background-color: #006600;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 4px;
+  color: white;
+}
+
+a:link, a:visited {
+  color: green;
+}
+
+#header {
+  width: 200%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: left;
+  text-indent: 20px;
+  background-color: rgba(200, 200, 200, 0.9);
+  border-bottom-color: #333333;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-top-color: #333333;
+  border-top-style: none;
+}
+
+#header a:visited, a:link{/* 何故かここvisitedとlinkを逆にしないと下のTableのリンクまで適用された*/
+  text-decoration: none;
+  color: black;
+}
+
+
+#header .header {
+  width: 750px;
+}
+
+#header .description {
+  font-size: 20px;
+  -webkit-text-decoration-color: currentcolor;
+  text-decoration-color: currentcolor;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  text-decoration-style: solid;
+}
+
+#main {
+  width: 800px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 1em;
+}
+
+#main h3 {
+  background-color: rgba(200, 200, 200, 0.7);
+  margin-right: 5px;
+  margin-left: -10px;
+  margin-top: -2px;
+}
+
+#footer {
+  text-align: center;
+  background-color: rgba(200, 200, 200, 0.9);
+  height: 50px;
+  padding-top: 30px;
+  border-top-color: #333333;
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
+.mono {
+  width: 150px;
+}
