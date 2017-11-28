@@ -16,7 +16,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: sans-serif;
-  position: relative;
+  position: fixed;
   z-index: 0;
   margin-top: 0px;
   margin-right: auto;
@@ -24,24 +24,6 @@ body {
   margin-left: auto;
   margin-left: 0px;/*ここ何故か0px指定しないと左に余白が出来る*/
   overflow: hidden;
-}
-
-/*:beforeにぼかし効果を設定する*/
-body:before{
-  content: '';
-  background: inherit;/*.bgImageで設定した背景画像を継承する*/
-  -webkit-filter: blur(20px);
-  -moz-filter: blur(20px);
-  -o-filter: blur(20px);
-  -ms-filter: blur(20px);
-  filter: blur(20px);
-  position: absolute;
-  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;/*重なり順序を一番下にしておく*/
 }
 
 h3 {
@@ -128,7 +110,7 @@ a:link, a:visited {
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #footer {

@@ -26,24 +26,6 @@ body {
   overflow: hidden;
 }
 
-/*:beforeにぼかし効果を設定する*/
-body:before{
-  content: '';
-  background: inherit;/*.bgImageで設定した背景画像を継承する*/
-  -webkit-filter: blur(20px);
-  -moz-filter: blur(20px);
-  -o-filter: blur(20px);
-  -ms-filter: blur(20px);
-  filter: blur(20px);
-  position: absolute;
-  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;/*重なり順序を一番下にしておく*/
-}
-
 h3 {
   background-color: rgba(200, 200, 200, 0.7);
   margin-right: 5px;
@@ -128,7 +110,7 @@ a:link, a:visited {
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #footer {
