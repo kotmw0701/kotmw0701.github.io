@@ -1,7 +1,9 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous">
@@ -70,3 +72,79 @@
     <div id="footer">©2017 そこら辺の雑記帳 motlof_kotmw</div>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous">
+    <link href="stylesheet/main.css" rel="stylesheet" type="text/css">
+    <title>そこら辺の雑記帳</title>
+  </head>
+  <body>
+    <!--Header-->
+    <div id="header"> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
+      <div class="description"> 気が向いたら更新する程度の物 </div>
+    </div>
+    <!--Containts-->
+    <div id="main">
+      <header>
+        <h1> トップページ </h1>
+      </header>
+      <h3> 自己紹介 </h3>
+      <p> 色々とプログラミングやらゲームやらを嗜んでます。 <br>
+        名前が不安定なのは気にしたら負けなのです、すでに呼び名が固定してる人はそれで問題ないです。<br>
+        基本的には<b>ことさん</b>とか呼ばれてます。<br>
+        書ききってないけどやりたいこと多すぎて決まらず逆に暇になる人です。<br>
+        (アイコンが色々なところで違うのでここでは割愛)</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>名前(不安定)</td>
+            <td><span>ことむー(kotmw)</span> <span>モドロフ(motlof)</span></td>
+          </tr>
+          <tr>
+            <td class="mono">趣味</td>
+            <td><span>マンガ</span> <span>アニメ</span> <span>音ゲー</span> <span>プログラミング(少し)</span></td>
+          </tr>
+          <tr>
+            <td>音ゲー</td>
+            <td><span>Deemo</span> <span>Arcaea(10.32)</span> <span>チュウニズム (14.13)</span><br>
+            </td>
+          </tr>
+          <tr>
+            <td>他のゲーム</td>
+            <td><span>アズールレーン</span> <span>Minecraft</span> <span>FFⅩⅣ</span></td>
+          </tr>
+          <tr>
+            <td>やりたいこと</td>
+            <td><span>PC自作</span> <span>音ゲー作成</span></td>
+          </tr>
+          <tr>
+            <td>お勉強中</td>
+            <td><span>Java</span> <span>Python</span> <span>HTML/CSS</span> <span>人間関係</span></td>
+          </tr>
+          <tr>
+            <td>リンク各種</td>
+            <td><a href="https://twitter.com/motlof_kotmw" target="_blank"><i
+
+                  class="fa fa-twitter" aria-hidden="true">motlof_kotmw</i></a> <a
+
+                href="https://github.com/kotmw0701" target="_blank"><i class="fa fa-github"
+
+                  aria-hidden="true">GitHub</i></a> <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h3>ぼやき</h3>
+      考えがあっても技術が足りなくて出来ないのと<br>
+      頭の回転が遅すぎて方法がまとまらないのどうにかしたい・・・ </div>
+    <!--Footer-->
+    <div id="footer">©2017 そこら辺の雑記帳 motlof_kotmw</div>
+  </body>
+</html>
+>>>>>>> origin/master
