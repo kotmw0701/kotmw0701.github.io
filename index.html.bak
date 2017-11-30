@@ -2,198 +2,71 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-
-      rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous">
+    <link href="stylesheet/main.css" rel="stylesheet" type="text/css">
     <title>そこら辺の雑記帳</title>
-    <style type="text/css">
-
-body {
-  width: 100%;
-  background: url("images/back.png") no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: sans-serif;
-  position: fixed;
-  z-index: 0;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-left: 0px;/*ここ何故か0px指定しないと左に余白が出来る*/
-  overflow: hidden;
-}
-
-h3 {
-  background-color: rgba(200, 200, 200, 0.7);
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-top: -2px;
-}
-
-h1 {
-  padding-top: 20px;
-  margin-top: -5px;
-}
-
-table {
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  border-collapse: collapse;
-  border-top-color: black;
-  border-right-color: black;
-  border-bottom-color: black;
-  border-left-color: black;
-}
-
-span {
-  background-color: #006600;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  font-size: 12px;
-  font-weight: bold;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-right: 4px;
-  color: #fff
-}
-
-a:link, a:visited {
-  color: green;
-}
-      
-#body {
-  width: 800px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  overflow: hidden;
-}
-
-#header {
-  width: 200%;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  font-size: 40px;
-  font-weight: normal;
-  text-align: left;
-  text-indent: 20px;
-  background-color: rgba(220, 220, 220, 0.75);
-}
-
-#header .header {
-	width: 750px;
-}
-
-#header .description {
-  font-size: 20px;
-  -webkit-text-decoration-color: currentcolor;
-  text-decoration-color: currentcolor;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: solid;
-  text-decoration-style: solid;
-}
-
-#main {
-  width: 800px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-#footer {
-  text-align: center;
-  background-color: rgba(200, 200, 200, 0.9);
-  height: 50px;
-  padding-top: 30px;
-}
-
-.containts {
-  padding-left: 1em;
-}
-
-.mono {
-  width: 150px;
-}
-
-</style></head>
+  </head>
   <body>
     <!--Header-->
-    <div id="header"> そこら辺の雑記帳
+    <div id="header"> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
       <div class="description"> 気が向いたら更新する程度の物 </div>
     </div>
-    <hr>
-    <div id="body">
-      <!--Containts-->
-      <div id="main">
-        <header class="containts">
-          <h1> トップページ </h1>
-        </header>
-        <h3> 自己紹介 </h3>
-        <div class="containts">
-          <p> 色々とプログラミングやらゲームやらを嗜んでます。 <br>
-            名前が不安定なのは気にしたら負けなのです、すでに呼び名が固定してる人はそれで問題ないです。<br>
-            基本的には<b>ことさん</b>とか呼ばれてます。<br>
-            書ききってないけどやりたいこと多すぎて決まらず逆に暇になる人です。<br>
-            (アイコンが色々なところで違うのでここでは割愛)</p>
-          <table>
-            <tbody>
-              <tr>
-                <td>名前(不安定)</td>
-                <td><span>ことむー(kotmw)</span> <span>モドロフ(motlof)</span></td>
-              </tr>
-              <tr>
-                <td class="mono">趣味</td>
-                <td><span>マンガ</span> <span>アニメ</span> <span>音ゲー</span> <span>プログラミング(少し)</span></td>
-              </tr>
-              <tr>
-                <td>音ゲー</td>
-                <td><span>Deemo</span> <span>Arcaea(10.32)</span> <span>チュウニズム (14.13)</span><br>
-                </td>
-              </tr>
-              <tr>
-                <td>他のゲーム</td>
-                <td><span>アズールレーン</span> <span>Minecraft</span> <span>FFⅩⅣ</span></td>
-              </tr>
-              <tr>
-                <td>やりたいこと</td>
-                <td><span>PC自作</span> <span>音ゲー作成</span></td>
-              </tr>
-              <tr>
-                <td>お勉強中</td>
-                <td><span>Java</span> <span>Python</span> <span>HTML/CSS</span> <span>人間関係</span></td>
-              </tr>
-              <tr>
-                <td>リンク各種</td>
-                <td><a href="https://twitter.com/motlof_kotmw" target="_blank"><i
-
-                      class="fa fa-twitter" aria-hidden="true">motlof_kotmw</i></a> <a
-
-                    href="https://github.com/kotmw0701" target="_blank"><i
-
-                      class="fa fa-github" aria-hidden="true">GitHub</i></a> <br>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <br>
-          ページ増やしたり、動きつけたりしたいなー・・・<br>
-          (　´∀｀)＜ぬるぽ </div>
-      </div>
-      <!--Footer--> </div>
+    <!--Contents-->
+    <div id="main">
+      <header>
+        <h1> トップページ </h1>
+      </header>
+      <h3> 自己紹介 </h3>
+      <p> ちまちまとプログラミングやらゲームやらを嗜んでます。 <br>
+        名前が不安定なのは気にしたら負けなのです、すでに呼び名が固定してる人はそれで問題ないです。<br>
+        基本的には<b>ことさん</b>とか呼ばれてます。<br>
+        書ききってないけどやりたいこと多すぎて決まらず逆に暇になる人です。<br>
+        雑食のケモナーです、貧乳好きだけどロリコンって訳じゃないです。 <br>
+        (アイコンが色々なところで違うのでここでは割愛)</p>
+      <table>
+        <tbody>
+          <tr>
+            <td class="mono">名前(不安定)</td>
+            <td><span>ことむー(kotmw)</span> <span>モドロフ(motlof)</span></td>
+          </tr>
+          <tr>
+            <td>趣味</td>
+            <td><span>マンガ</span> <span>アニメ</span> <span>音ゲー</span> <span>プログラミング(少し)</span></td>
+          </tr>
+          <tr>
+            <td>音ゲー</td>
+            <td><span>Deemo</span> <span>Arcaea(10.32)</span> <span>チュウニズム (14.13)</span><br>
+            </td>
+          </tr>
+          <tr>
+            <td>他のゲーム</td>
+            <td><span>アズールレーン</span> <span>Minecraft</span> <span>FFⅩⅣ</span></td>
+          </tr>
+          <tr>
+            <td>やりたいこと</td>
+            <td><span>PC自作</span> <span>音ゲー作成</span></td>
+          </tr>
+          <tr>
+            <td>お勉強中</td>
+            <td><span>Java</span> <span>Python</span> <span>HTML/CSS</span> <span>人間関係</span></td>
+          </tr>
+          <tr>
+            <td>リンク各種</td>
+            <td><a href="https://twitter.com/motlof_kotmw" target="_blank"><i
+                  class="fa fa-twitter" aria-hidden="true">motlof_kotmw</i></a> <a
+                href="https://github.com/kotmw0701" target="_blank"><i class="fa fa-github"
+                  aria-hidden="true">GitHub</i></a> <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h3>ぼやき</h3>
+      考えがあっても技術が足りなくて出来ないのと<br>
+      頭の回転が遅すぎて方法がまとまらないのどうにかしたい・・・</div>
+    <!--Footer-->
     <div id="footer">©2017 そこら辺の雑記帳 motlof_kotmw</div>
-    
   </body>
 </html>
