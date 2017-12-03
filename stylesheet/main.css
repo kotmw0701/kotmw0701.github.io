@@ -3,19 +3,13 @@
   background-color: rgba(0, 0, 0, 0);
   background-image: url("../images/back.png");
   background-repeat: no-repeat;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-position-x: center;
-  background-position-y: center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
   font-family: sans-serif;
   z-index: 0;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-left: 0px;
+  margin: 0 auto;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
 }
 
