@@ -6,12 +6,10 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
+  position: fixed;
   font-family: sans-serif;
   z-index: 0;
   margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: auto;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -93,6 +91,14 @@ a:link, a:visited {
   border-top-color: #333333;
   border-top-width: 2px;
   border-top-style: solid;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mono {
