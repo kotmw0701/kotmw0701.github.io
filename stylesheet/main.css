@@ -1,6 +1,5 @@
 ﻿body {
   width: 100%;
-  height: 1000px;
   background-color: rgba(0, 0, 0, 0);
   background-image: url("../images/back.png");
   background-repeat: no-repeat;
@@ -17,7 +16,6 @@
   margin-right: auto;
   margin-bottom: auto;
   margin-left: 0px;
-  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -76,7 +74,7 @@ a:link, a:visited {
 
 #main {
   width: 800px;
-  margin-top: 0px;
+  margin-top: 5px;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
