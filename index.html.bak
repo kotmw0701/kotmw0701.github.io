@@ -11,7 +11,8 @@
     <link href="stylesheet/main.css" rel="stylesheet" type="text/css">
     <title>そこら辺の雑記帳</title>
   </head>
-  <body> <!--Header-->
+  <body>
+    <!--Header-->
     <div id="header"> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
       <div class="description"> 気が向いたら更新する程度の物 </div>
     </div>
@@ -31,28 +32,36 @@
         <tbody>
           <tr>
             <td class="mono">名前(不安定)</td>
-            <td><span>ことむー(kotmw)</span> <span>モドロフ(motlof)</span></td>
+            <td><span class="tag">ことむー(kotmw)</span> <span class="tag">モドロフ(motlof)</span></td>
           </tr>
           <tr>
             <td>趣味</td>
-            <td><span>マンガ</span> <span>アニメ</span> <span>音ゲー</span> <span>プログラミング(少し)</span></td>
+            <td><span class="tag">マンガ</span> <span class="tag">アニメ</span> <span
+
+                class="tag">音ゲー</span> <span class="tag">プログラミング(少し)</span></td>
           </tr>
           <tr>
             <td>音ゲー</td>
-            <td><span>Deemo</span> <span>Arcaea(10.32)</span> <span>チュウニズム (14.13)</span><br>
+            <td><span class="tag">Deemo</span> <span class="tag">Arcaea(10.32)</span> <span
+
+                class="tag">チュウニズム (14.13)</span><br>
             </td>
           </tr>
           <tr>
             <td>他のゲーム</td>
-            <td><span>アズールレーン</span> <span>Minecraft</span> <span>FFⅩⅣ</span></td>
+            <td><span class="tag">アズールレーン</span> <span class="tag">Minecraft</span> <span
+
+                class="tag">FFⅩⅣ</span></td>
           </tr>
           <tr>
             <td>やりたいこと</td>
-            <td><span>PC自作</span> <span>音ゲー作成</span></td>
+            <td><span class="tag">PC自作</span> <span class="tag">音ゲー作成</span></td>
           </tr>
           <tr>
             <td>お勉強中</td>
-            <td><span>Java</span> <span>Python</span> <span>HTML/CSS</span> <span>人間関係</span></td>
+            <td><span class="tag">Java</span> <span class="tag">Python</span> <span
+
+                class="tag">HTML/CSS</span> <span class="tag">人間関係</span></td>
           </tr>
           <tr>
             <td>リンク各種</td>
