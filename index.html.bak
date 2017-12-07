@@ -15,7 +15,7 @@
     <div id="container">
       <!--Header-->
       <header id="header"> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
-        <div class="description"> 気が向いたら更新する程度の物&nbsp; (1.0.9_8)</div>
+        <div class="description"> 気が向いたら更新する程度の物  (1.0.10)</div>
       </header>
       <!--Contents-->
       <div id="main">
@@ -87,8 +87,9 @@
       </div>
       <!--./main-->
       <!--Footer-->
-      <footer id="footer">©2017 そこら辺の雑記帳 motlof_kotmw</footer>
+      <footer id="footer">c2017 そこら辺の雑記帳 motlof_kotmw</footer>
     </div>
     <!--./container-->
+    
   </body>
 </html>
