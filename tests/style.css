@@ -55,10 +55,15 @@ margin [上][右][下][左]
 	background: rgba(0, 134, 249, 0.8);
 }
 
+section .container {
+	flex-flow: row;
+}
+
 main {
+	flex: 1 1 auto;
+	margin: 6px 3px 6px 6px;
+	border-radius: 5px;
 	padding: 20px 10px;
-	margin: 6px 6px 3px;
-	border-radius: 5px ;
 	background: rgba(220, 220, 220, 0.85);
 }
 
@@ -72,9 +77,10 @@ h3 {
 }
 
 .sidebar {
-	padding: 20px 10px 20px 10px;
-	margin: 3px 6px 6px;
+	flex: 0 0 240px;
+	margin: 6px 6px 6px 3px;
 	border-radius: 5px;
+	padding: 20px 10px 20px 10px;
 	background: rgba(220, 220, 220, 0.85);
 }
 
@@ -93,7 +99,7 @@ h3 {
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 	border-bottom-left-radius: 2px;
-	font-size: 12px;
+	font-size: 0.75em;
 	font-weight: bold;
 	padding: 2px 5px;
 	margin-right: 4px;
@@ -104,18 +110,28 @@ h3 {
 	text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+	.header-inner {
+		font-size: 1rem;
+	}
+	
+	.header-inner a:visited, .header-inner a:link{
+		font-size: 2rem;
+	}
+	
 	section .container {
-		flex-flow: row;
+		flex-flow: column;
 	}
+	
 	main {
-		flex: 1 1 auto;
-		margin: 6px 3px 6px 0px;
-		border-radius: 0px 5px 5px 0px;
+		margin: 6px 6px 3px;
 	}
+	
 	.sidebar {
-		flex: 0 0 240px;
-		margin: 6px 6px 6px 3px;
-		border-radius: 5px;
+		margin: 3px 6px 6px;
+	}
+	.tag {
+		font-size: 0.6em;
+		font-weight: normal;
 	}
 }
