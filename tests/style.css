@@ -30,12 +30,17 @@ a:link, a:visited {
 
 /* 
 各パートにパディング、背景、テキスト色などを指定する
+margin [上下左右]
+margin [上下][左右]
+margin [上][左右][下]
+margin [上][右][下][左]
+
 */
 .header-inner {
 	font-size: 1.4rem;
-	padding: 10px 10px 0 10px;
+	padding: 0px 20px;
 	margin: 0 auto;
-	background: rgba(200, 200, 200, 0.9);
+	background: rgba(210, 210, 210, 0.9);
 }
 
 .header-inner a:visited, .header-inner a:link{
@@ -45,21 +50,41 @@ a:link, a:visited {
 }
 
 .nav-inner {
-	padding: 10px 10px 0 10px;
+	padding: 10px 10px 0px;
 	color: #fff;
 	background: rgba(0, 134, 249, 0.8);
 }
+
 main {
-	padding: 20px 10px 20px 10px;
-	background: rgba(255, 253, 227, 0.8);
+	padding: 20px 10px;
+	margin: 6px 6px 3px;
+	border-radius: 5px ;
+	background: rgba(220, 220, 220, 0.85);
 }
+
+main h1 {
+	margin: 5px 0px 5px;
+}
+
+h3 {
+	background-color: rgba(150, 150, 150, 0.85);
+	margin: 0;
+}
+
 .sidebar {
 	padding: 20px 10px 20px 10px;
-	background: rgba(192, 245, 185, 0.8);
+	margin: 3px 6px 6px;
+	border-radius: 5px;
+	background: rgba(220, 220, 220, 0.85);
 }
+
+.menu {
+	padding: 0px 0px 0px 30px;
+}
+
 .footer-inner {
 	padding: 20px 16px 10px 16px;
-	background: rgba(186, 215, 245, 0.9);
+	background: rgba(210, 210, 210, 0.9);
 }
 
 .tag {
@@ -75,25 +100,22 @@ main {
 	color: white;
 }
 
+.copyright {
+	text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
 	section .container {
 		flex-flow: row;
 	}
 	main {
 		flex: 1 1 auto;
+		margin: 6px 3px 6px 0px;
+		border-radius: 0px 5px 5px 0px;
 	}
 	.sidebar {
-		flex: 0 0 340px;
+		flex: 0 0 240px;
+		margin: 6px 6px 6px 3px;
+		border-radius: 5px;
 	}
-}
-
-/* わかりやすくするために適用しているCSS */
-main p:last-child {
-	margin-bottom: 0;
-}
-.main-title {
-	margin: 0;
-}
-.copyright {
-	margin: 0;
 }

@@ -10,8 +10,8 @@
   <body>
     <div id="container">
       <!--Header-->
-      <header id="header"> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
-        <div class="description"> 気が向いたら更新する程度の物 (1.0.11_3)</div>
+      <header id="header"> <a href="http://kotmw0701.github.io/tests/index.html">そこら辺の雑記帳</a>
+        <div class="description"> 気が向いたら更新する程度の物 (1.0.11_4(before))</div>
       </header>
       <!--Contents-->
       <div id="main">

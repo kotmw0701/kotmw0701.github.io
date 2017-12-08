@@ -13,21 +13,22 @@
       <div class="container">
         <div class="header-inner">
           <!-- ヘッダーの要素 --> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
-          <div class="description"> 気が向いたら更新する程度の物 (1.0.11_3)</div>
+          <div class="description"> 気が向いたら更新する程度の物 (1.0.11_4)</div>
         </div>
         <!-- /.header-inner --> </div>
       <!-- /.container --> </header>
     <section>
       <div class="container">
         <main>
-          <p class="main-title">トップページ</p>
-          <h3> 自己紹介</h3>
-          <p> ちまちまとプログラミングやらゲームやらを嗜んでます。 <br>
-            名前が不安定なのは気にしたら負けなのです、すでに呼び名が固定してる人はそれで問題ないです。<br>
+          <h1>トップページ</h1>
+          <h3>自己紹介</h3>
+          <p>ちまちまとプログラミングやらゲームやらを嗜んでます。 <br>
+            名前が不安定なので、すでに呼び名が固定してる人はそれで問題ないです。<br>
             基本的には<b>ことさん</b>とか呼ばれてます。<br>
             書ききってないけどやりたいこと多すぎて決まらず逆に暇になる人です。<br>
             雑食のケモナーです、貧乳好きだけどロリコンって訳じゃないです。 <br>
             (アイコンが色々なところで違うのでここでは割愛)</p>
+          <hr>
           <table>
             <tbody>
               <tr>
@@ -62,18 +63,45 @@
               </tr>
             </tbody>
           </table>
+          <hr>
+          <h3>ぼやき</h3>
+          <p> HTMLどころかCSSもひと昔前にほんと指先触れただけだから、ゼロから学んでるんだけど、自分の頭の回転の遅さはほんと恨みたいレベル。<br>
+            技術もまだまだ全然ないしねぇ・・・ <br>
+            デザイン的技術が欲しい、良い配色が全然思いつかない</p>
         </main>
         <aside class="sidebar">
-          <!-- サイドバーの要素 --> sidebar </aside>
+          <!-- サイドバーの要素 -->
+          <h3>記事メニュー</h3>
+          <ul class="menu">
+            <li><a href="#">トップページ</a></li>
+            <li><a href="#">雑記一覧(ブログ)</a>
+              <ul class="menu">
+                <li><a href="#">ブログカテゴリ1(未定)</a></li>
+                <li><a href="#">ブログカテゴリ2(未定)</a></li>
+                <li><a href="#">ブログカテゴリ3(未定)</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h3>自身の制作物</h3>
+          <ul class="menu">
+            <li><a href="#">一覧</a>
+              <ul class="menu">
+                <li><a href="#">制作物1</a></li>
+                <li><a href="#">制作物2</a></li>
+              </ul>
+            </li>
+          </ul>
+          まだリンク先作って無い </aside>
         <!-- /.sidebar --> </div>
       <!-- /.container --> </section>
     <footer>
       <div class="container">
         <div class="footer-inner">
           <!-- フッターの要素 -->
-          <p class="copyright">footer ©20XX HTML/CSS Technic</p>
+          <p class="copyright">(C)2017 そこら辺の雑記帳 motlof_kotmw</p>
         </div>
         <!-- /.footer-inner --> </div>
       <!-- /.container --> </footer>
+    
   </body>
 </html>
