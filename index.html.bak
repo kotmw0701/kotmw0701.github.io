@@ -1,76 +1,109 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="target-densitydpi=device-dpi, width=960, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="stylesheet/main.css" rel="stylesheet" type="text/css">
-    <title>そこら辺の雑記帳</title>
+    <title>そこら辺の雑記帳 | 気が向いたら更新する程度の物</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="container">
-      <!--Header-->
-      <header id="header"> <a href="http://kotmw0701.github.io/tests/index.html">そこら辺の雑記帳</a>
-        <div class="description"> 気が向いたら更新する程度の物 (1.0.11_4(before))</div>
-      </header>
-      <!--Contents-->
-      <div id="main">
-        <div>
-          <h1> トップページ </h1>
+    <header>
+      <div class="container">
+        <div class="header-inner">
+          <!-- ヘッダーの要素 --> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
+          <div class="description"> 気が向いたら更新する程度の物 (1.0.13)</div>
         </div>
-        <section>
-          <h3> 自己紹介</h3>
-          <p> ちまちまとプログラミングやらゲームやらを嗜んでます。 <br>
-            名前が不安定なのは気にしたら負けなのです、すでに呼び名が固定してる人はそれで問題ないです。<br>
+        <!-- /.header-inner --> </div>
+      <!-- /.container --> </header>
+    <section>
+      <div class="container">
+        <main>
+          <h1>トップページ</h1>
+          <h3>自己紹介</h3>
+          <p>ちまちまとプログラミングやらゲームやらを嗜んでます。 <br>
+            名前が不安定なので、すでに呼び名が固定してる人はそれで問題ないです。<br>
             基本的には<b>ことさん</b>とか呼ばれてます。<br>
             書ききってないけどやりたいこと多すぎて決まらず逆に暇になる人です。<br>
             雑食のケモナーです、貧乳好きだけどロリコンって訳じゃないです。 <br>
             (アイコンが色々なところで違うのでここでは割愛)</p>
-          <table>
+          <hr>
+          <table class="table_query">
             <tbody>
               <tr>
-                <td class="mono">名前(不安定)</td>
+                <th>名前(不安定)</th>
                 <td><span class="tag">ことむー(kotmw)</span> <span class="tag">モドロフ(motlof)</span></td>
               </tr>
               <tr>
-                <td>趣味</td>
+                <th>趣味</th>
                 <td><span class="tag">マンガ</span> <span class="tag">アニメ</span> <span class="tag">音ゲー</span> <span class="tag">プログラミング(少し)</span></td>
               </tr>
               <tr>
-                <td>音ゲー</td>
+                <th>音ゲー</th>
                 <td><span class="tag">Deemo</span> <span class="tag">Arcaea(10.32)</span> <span class="tag">チュウニズム (14.13)</span><br>
                 </td>
               </tr>
               <tr>
-                <td>他のゲーム</td>
+                <th>他のゲーム</th>
                 <td><span class="tag">アズールレーン</span> <span class="tag">Minecraft</span> <span class="tag">FFⅩⅣ</span></td>
               </tr>
               <tr>
-                <td>やりたいこと</td>
+                <th>やりたいこと</th>
                 <td><span class="tag">PC自作</span> <span class="tag">音ゲー作成</span></td>
               </tr>
               <tr>
-                <td>お勉強中</td>
+                <th>お勉強中</th>
                 <td><span class="tag">Java</span> <span class="tag">Python</span> <span class="tag">HTML/CSS</span> <span class="tag">人間関係</span></td>
               </tr>
               <tr>
-                <td>リンク各種</td>
+                <th>リンク各種</th>
                 <td><a href="https://twitter.com/motlof_kotmw" target="_blank"><i class="fa fa-twitter" aria-hidden="true">motlof_kotmw</i></a> <a href="https://github.com/kotmw0701" target="_blank"><i class="fa fa-github" aria-hidden="true">GitHub</i></a> <br>
                 </td>
               </tr>
             </tbody>
           </table>
-        </section>
-        <br>
-        <section>
+          <hr>
           <h3>ぼやき</h3>
-          考えがあっても技術が足りなくて出来ないのと<br>
-          頭の回転が遅すぎて方法がまとまらないのどうにかしたい・・・ <a href="tests/index.html">テストページ</a> </section>
-      </div>
-      <!--./main-->
-      <!--Footer-->
-      <footer id="footer">c2017 そこら辺の雑記帳 motlof_kotmw</footer>
-    </div>
-    <!--./container-->
+          <p> HTMLどころかCSSもひと昔前にほんと指先触れただけだから、ゼロから学んでるんだけど、自分の頭の回転の遅さはほんと恨みたいレベル。<br>
+            技術もまだまだ全然ないしねぇ・・・ <br>
+            デザイン的技術が欲しい、良い配色が全然思いつかない</p>
+        </main>
+        <aside class="sidebar">
+          <!-- サイドバーの要素 -->
+          <h3>記事メニュー</h3>
+          <ul class="menu">
+            <li><a href="#">トップページ</a></li>
+            <li><a href="#">雑記一覧(ブログ)</a>
+              <ul class="menu">
+                <li><a href="#">ブログカテゴリ1(未定)</a></li>
+                <li><a href="#">ブログカテゴリ2(未定)</a></li>
+                <li><a href="#">ブログカテゴリ3(未定)</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h3>自身の制作物</h3>
+          <ul class="menu">
+            <li><a href="#">一覧</a>
+              <ul class="menu">
+                <li><a href="#">制作物1</a></li>
+                <li><a href="#">制作物2</a></li>
+              </ul>
+            </li>
+          </ul>
+          まだリンク先作って無い
+        	<h3>最近の更新記事</h3>
+        </aside>
+        <!-- /.sidebar --> </div>
+      <!-- /.container --> </section>
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <!-- フッターの要素 -->
+          <p class="copyright">(C)2017 そこら辺の雑記帳 motlof_kotmw</p>
+        </div>
+        <!-- /.footer-inner --> </div>
+      <!-- /.container --> </footer>
+    
   </body>
 </html>
