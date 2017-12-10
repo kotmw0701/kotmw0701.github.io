@@ -13,7 +13,7 @@
       <div class="container">
         <div class="header-inner">
           <!-- ヘッダーの要素 --> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
-          <div class="description"> 気が向いたら更新する程度の物 (1.0.13)</div>
+          <div class="description"> 気が向いたら更新する程度の物 (1.0.14)</div>
         </div>
         <!-- /.header-inner --> </div>
       <!-- /.container --> </header>
@@ -74,7 +74,7 @@
           <h3>記事メニュー</h3>
           <ul class="menu">
             <li><a href="#">トップページ</a></li>
-            <li><a href="#">雑記一覧(ブログ)</a>
+            <li><a href="bloglist.html">雑記一覧(ブログ)</a>
               <ul class="menu">
                 <li><a href="#">ブログカテゴリ1(未定)</a></li>
                 <li><a href="#">ブログカテゴリ2(未定)</a></li>
@@ -92,8 +92,8 @@
             </li>
           </ul>
           まだリンク先作って無い
-        	<h3>最近の更新記事</h3>
-        </aside>
+          <h3>最近の更新記事</h3>
+          こういうところってやっぱJSで取るんかね？ </aside>
         <!-- /.sidebar --> </div>
       <!-- /.container --> </section>
     <footer>
@@ -104,6 +104,5 @@
         </div>
         <!-- /.footer-inner --> </div>
       <!-- /.container --> </footer>
-    
   </body>
 </html>

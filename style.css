@@ -61,19 +61,44 @@ section .container {
 
 main {
 	flex: 1 1 auto;
-	margin: 6px 3px 6px 6px;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 5px 10px;
+	margin: 6px 3px 6px 6px;
 	background: rgba(220, 220, 220, 0.85);
 }
 
-main h1 {
-	margin: 5px 0px 5px;
+main h1, main h2{
+	margin: 5px 0px 5px 10px;
 }
 
 h3 {
 	background-color: rgba(150, 150, 150, 0.85);
 	margin: 0;
+}
+
+.breadcrumb ol {
+	padding: 0 0 0 5px;
+	margin: 5px 0 2px;
+}
+
+.breadcrumb li {
+	font-size: 0.8em;
+	display: inline;
+}
+
+.breadcrumb li::after {
+	font-family: FontAwesome;
+	content: '\f105';
+	padding: 0 0 0 7px;
+}
+
+.breadcrumb li:last-child::after {
+	content: none;
+}
+
+.breadcrumb a:link, .breadcrumb a:visited {
+	text-decoration: none;
+	color: black;
 }
 
 .table_query th {
@@ -82,9 +107,9 @@ h3 {
 
 .sidebar {
 	flex: 0 0 240px;
-	margin: 6px 6px 6px 3px;
 	border-radius: 5px;
 	padding: 10px;
+	margin: 6px 6px 6px 3px;
 	background: rgba(220, 220, 220, 0.85);
 }
 
