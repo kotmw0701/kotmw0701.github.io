@@ -11,7 +11,8 @@
   <body>
     <header>
       <div class="container">
-        <div class="header-inner"> <!-- ヘッダーの要素 --> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
+        <div class="header-inner">
+          <!-- ヘッダーの要素 --> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
           <div class="description"> 気が向いたら更新する程度の物</div>
         </div>
         <!-- /.header-inner --> </div>
@@ -26,7 +27,9 @@
             </ol>
           </div>
           <h2>最近の雑記一覧</h2>
-          <a href="others/1.html">サイト立ち上げました</a>
+          <div class="article-container"> <img src="../images/noimage.png">
+            <a href="others/1.html">サイト立ち上げました</a>
+          </div>
         </main>
         <aside class="sidebar">
           <!-- サイドバーの要素 -->

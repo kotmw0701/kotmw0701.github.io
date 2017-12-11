@@ -67,7 +67,7 @@ main {
 	background: rgba(220, 220, 220, 0.85);
 }
 
-main h1, main h2{
+main h1, main h2, main h4{
 	margin: 10px 0px 5px 10px;
 }
 
@@ -119,6 +119,25 @@ ul {
 	text-align: left;
 }
 
+.article-container {
+	padding: 1px;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+
+.article-container img {
+	float: left;
+	width: 100px;
+	height: 100px;
+	padding: 0 10px 0 0;
+}
+
+.article-container a:link, .article-container a:visited{
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: blue;
+}
+
 .sidebar {
 	flex: 0 0 240px;
 	border-radius: 5px;
@@ -131,7 +150,7 @@ ul {
 	border-radius: 5px 5px 0px 0px;
 }
 
-.menu {
+ul.menu {
 	padding: 0px 0px 0px 30px;
 }
 
