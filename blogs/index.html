@@ -1,22 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>雑記一覧 | そこら辺の雑記帳</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../common.js"></script>
     <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="header-inner">
-          <!-- ヘッダーの要素 --> <a href="http://kotmw0701.github.io">そこら辺の雑記帳</a>
-          <div class="description"> 気が向いたら更新する程度の物</div>
-        </div>
-        <!-- /.header-inner --> </div>
-      <!-- /.container --> </header>
+      <script type="text/javascript">header('../');</script>
+    </header>
     <section>
       <div class="container">
         <main>
@@ -38,41 +35,13 @@
             <p>ふと授業でHTMLやった時に、昔にとても軽くであったけれども、弄ったなって思い...</p>
           </div>
           <hr></main>
-        <aside class="sidebar">
-          <!-- サイドバーの要素 -->
-          <h3>記事メニュー</h3>
-          <ul class="menu">
-            <li><a href="../index.html">トップページ</a></li>
-            <li><a href="../about.html">自己紹介</a></li>
-            <li><a href="#">雑記一覧(ブログ)</a>
-              <ul class="menu">
-                <li><a href="games/index.html">ゲーム関連</a></li>
-                <li><a href="develops/index.html">開発関連</a></li>
-                <li><a href="others/index.html">その他雑記</a></li>
-              </ul>
-            </li>
-          </ul>
-          <h3>自身の制作物</h3>
-          <ul class="menu">
-            <li><a href="#">一覧</a>
-              <ul class="menu">
-                <li><a href="#">制作物1</a></li>
-                <li><a href="#">制作物2</a></li>
-              </ul>
-            </li>
-          </ul>
-          まだリンク先作って無い
-          <h3>最近の更新記事</h3>
-          こういうところってやっぱJSで取るんかね？ </aside>
-        <!-- /.sidebar --> </div>
-      <!-- /.container --> </section>
+        <aside id="sidebar">
+          <script type="text/javascript">sidebar('../');</script>
+        </aside>
+      </div>
+    </section>
     <footer>
-      <div class="container">
-        <div class="footer-inner">
-          <!-- フッターの要素 -->
-          <p class="copyright">(C)2017 そこら辺の雑記帳 motlof_kotmw</p>
-        </div>
-        <!-- /.footer-inner --> </div>
-      <!-- /.container --> </footer>
+      <script type="text/javascript">footer('../');</script>
+    </footer>
   </body>
 </html>
