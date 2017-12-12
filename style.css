@@ -138,6 +138,25 @@ ul {
 	color: blue;
 }
 
+#sidebar {
+	flex: 0 0 240px;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 6px 6px 6px 3px;
+	background: rgba(220, 220, 220, 0.85);
+}
+
+#sidebar h3:first-child {
+	border-radius: 5px 5px 0px 0px;
+}
+
+ul.menu {
+	padding: 0px 0px 0px 30px;
+}
+
+
+/*一時しのぎ*/
+
 .sidebar {
 	flex: 0 0 240px;
 	border-radius: 5px;
@@ -150,9 +169,7 @@ ul {
 	border-radius: 5px 5px 0px 0px;
 }
 
-ul.menu {
-	padding: 0px 0px 0px 30px;
-}
+/**/
 
 .footer-inner {
 	padding: 20px 16px 10px 16px;
