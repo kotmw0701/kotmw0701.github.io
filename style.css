@@ -8,7 +8,7 @@ html {
 body {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: #fff;
 	background-image: url("images/back.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -19,6 +19,22 @@ body {
 	overflow-y: auto;
 	z-index: 0;
 	-webkit-overflow-scrolling: touch;
+}
+
+body:before{
+	content: '';
+	background: inherit;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	z-index: -1;
 }
 
 .container {
@@ -54,6 +70,7 @@ ul {
 }
 
 /* ヘッダー */
+
 
 .header-inner {
 	font-size: 1.4rem;
@@ -104,7 +121,7 @@ main h1, main h2, main h4{
 
 .breadcrumb li::after {
 	font-family: FontAwesome;
-	content: '\f105';
+	content: '\f0da';
 	padding: 0 0 0 7px;
 }
 
@@ -127,7 +144,6 @@ main h1, main h2, main h4{
 }
 
 .article-container {
-	padding: 1px;
 	margin: 0 0 10px 0;
 	overflow: hidden;
 }
@@ -165,7 +181,7 @@ main h1, main h2, main h4{
 	padding: 10px;
 	margin: 6px 6px 6px 3px;
 	background: rgba(220, 220, 220, 0.85);
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #sidebar h3:first-child {
@@ -173,19 +189,19 @@ main h1, main h2, main h4{
 }
 
 .menu {
-	padding: 0 0 0 0.5em;
+	padding: 0 0 0 0.45em;
 	list-style: none;
 }
 
 .menu ul {
-	padding: 0 0 0 1em;
+	padding: 0 0 0 1.35em;
 }
 
 .menu li:before {
 	font-family: FontAwesome;
-	content: '\f138';
-	color: darkgreen;
-	padding: 0 0.4em 0 0;
+	content: '\f0da';
+	color: black;
+	padding: 0 0.65em 0 0;
 }
 
 /* フッター */
