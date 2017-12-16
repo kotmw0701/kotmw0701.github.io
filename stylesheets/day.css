@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+
+body:before {
+	opacity: 1;
+}
+
+a:link, a:visited {
+	color: green;
+}
+
+h3 {
+	background-color: rgba(150, 150, 150, 0.85);
+}
+
+/* ヘッダー */
+
+.header-inner {
+	background-color: rgba(210, 210, 210, 0.9);
+}
+
+.header-inner a:visited, .header-inner a:link{
+	color: black;
+}
+
+/* メイン */
+
+main {
+	background-color: rgba(220, 220, 220, 0.85);
+}
+
+.post-date {
+	background-color: rgba(150, 150, 150, 0.85);
+}
+
+.article-container a:link, .article-container a:visited {
+	color: blue;
+}
+
+.breadcrumb a:link, .breadcrumb a:visited {
+	color: black;
+}
+
+.tag {
+	background-color: #006600;
+	color: white;
+}
+
+/* サイドバー */
+
+#sidebar {
+	background-color: rgba(220, 220, 220, 0.85);
+}
+
+.menu li:before {
+	color: black;
+}
+
+/* フッター */
+
+.footer-inner {
+	background-color: rgba(210, 210, 210, 0.9);
+}

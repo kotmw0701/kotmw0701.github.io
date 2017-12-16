@@ -8,10 +8,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="common.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/day.css" id="toggle">
   </head>
   <body>
+    <script type="text/javascript">switchingStyles();</script>
     <header>
       <script type="text/javascript">header();</script>
     </header>
@@ -22,12 +24,12 @@
           <p> トップページです、よろしくおねがいします。 <a href="about.html">自己紹介ページ</a>を別にしたらトップページ何書けば良いか分からなくなっちゃったｗ</p>
           <h3> 最近の記事一覧 </h3>
           <hr>
-          <div class="article-container"> <img src="images/noimage.png"> <time class="fa fa-calendar fa-padding" aria-hidden="true">2017/12/11</time><br>
+          <div class="article-container"> <img src="images/noimage.png" class="noimg"> <time class="fa fa-calendar fa-padding" aria-hidden="true">2017/12/11</time><br>
             <a href="blogs/others/1.html">サイト立ち上げました</a>
             <p>今更になってHTMLの勉強がてら、自サイトを立ち上げました。</p>
           </div>
           <hr>
-          <div class="article-container"> <img src="images/noimage.png"> <time class="fa fa-calendar fa-padding" aria-hidden="true">2017/12/11</time><br>
+          <div class="article-container"> <img src="images/noimage.png" class="noimg"> <time class="fa fa-calendar fa-padding" aria-hidden="true">2017/12/11</time><br>
             <a href="blogs/others/2.html">立ち上げた経緯と今後</a>
             <p>ふと授業でHTMLやった時に、昔にとても軽くであったけれども、弄ったなって思い...</p>
           </div>
