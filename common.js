@@ -1,38 +1,28 @@
-﻿function header(rootDir){
-	if(rootDir == null) rootDir = "./";
-	$.ajax({
-		url: rootDir + "header.html",
-		cache: false,
-	        async: false,
-	        dataType: 'html',
-		success: function(html){
-            		document.write(html);
-		}
-	});
+﻿function header(rootDir) {
+	contents(rootDir, "header");
 }
 
-function sidebar(rootDir){
-	if(rootDir == null) rootDir = "./";
-	$.ajax({
-		url: rootDir + "sidebar.html",
-		cache: false,
-	        async: false,
-	        dataType: 'html',
-		success: function(html){
-			html = html.replace(/\{\$root\}/g, rootDir); //footer.htmlの{$root}を置換
-            		document.write(html);
-		}
-	});
+function sidebar(rootDir) {
+	contents(rootDir, "sidebar");
 }
 
-function footer(rootDir){
+function footer(rootDir) {
+	contents(rootDir, "footer");
+}
+
+function article(rootDir) {
+	contents(rootDir, "articlelist");
+}
+
+function contents(rootDir, name) {
 	if(rootDir == null) rootDir = "./";
 	$.ajax({
-		url: rootDir + "footer.html",
+		url: rootDir + name +".html",
 		cache: false,
 	        async: false,
 	        dataType: 'html',
 		success: function(html){
+			html = html.replace(/\{\$root\}/g, rootDir);
             		document.write(html);
 		}
 	});

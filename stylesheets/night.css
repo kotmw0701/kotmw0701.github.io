@@ -4,6 +4,10 @@ html {
 	color: white;
 }
 
+body {
+	background-color: #000;	
+}
+
 body:before {
 	opacity: 0.5;
 }
@@ -33,7 +37,7 @@ main {
 }
 
 .post-date {
-	background-color: rgba(150, 150, 150, 0.85);
+	background-color: rgba(25, 25, 25, 0.85);
 }
 
 .noimg {
@@ -66,5 +70,5 @@ main {
 /* フッター */
 
 .footer-inner {
-	background-color: rgba(210, 210, 210, 0.9);
+	background-color: rgba(50, 50, 50, 0.9);
 }
