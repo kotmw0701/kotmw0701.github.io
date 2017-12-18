@@ -125,6 +125,7 @@ main h1, main h2, main h4{
 
 .post-date {
 	text-align: right;
+	padding-right: 0.2em;
 }
 
 .table_query th {
@@ -149,6 +150,12 @@ main h1, main h2, main h4{
 .article-container a:link, .article-container a:visited {
 	font-size: 1.2rem;
 	text-decoration: none;
+}
+
+.info {
+	padding: 0.8em 1.5em;
+	border-style: dashed;
+	border-radius: 10px;
 }
 
 .tag {

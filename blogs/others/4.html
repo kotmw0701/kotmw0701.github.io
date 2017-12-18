@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>pingコマンドに関しての備忘録 | そこら辺の雑記帳</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../common.js"></script>
+    <script type="text/javascript" src="../../script.js"></script>
+    <link rel="stylesheet" href="../../stylesheets/normalize.css">
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+    <link rel="stylesheet" href="../../stylesheets/day.css" id="toggle">
+  </head>
+  <body>
+    <script type="text/javascript">switchingStyles();</script>
+    <header>
+      <script type="text/javascript">header('../../');</script>
+    </header>
+    <section>
+      <div class="container">
+        <main>
+          <div class="breadcrumb">
+            <ol>
+              <li><a href="../../index.html">トップページ</a></li>
+              <li><a href="../index.html">雑記</a></li>
+              <li><a href="index.html">その他の雑記</a></li>
+            </ol>
+          </div>
+          <h1>pingコマンドに関しての備忘録</h1>
+          <div class="post-date"><span class="fa fa-calendar fa-padding" aria-hidden="true">2017/12/18</span></div>
+          pingコマンドに関するちょっとしたメモ<br><br>
+          
+          もしpingコマンドを使用した時に
+          <p class="info">'ping' は、内部コマンドまたは外部コマンド、<br>
+          操作可能なプログラムまたはバッチ ファイルとして認識されていません。</p>
+          って表示された時の対処方法は
+          <ul>
+            <li>環境変数を弄る</li>
+            <li>ping.exeを直接叩く</li>
+          </ul>
+          の2種類の方法がある。
+          <br><br>
+          <h3>環境変数を弄る</h3>
+          <p>環境変数を弄る方法は<br>
+          [コントロールパネル]→[システム]→[システムの詳細設定]→[環境変数]<br>
+          の下にある[システム環境変数(S)]の中を覗くと、[変数]の下の方に"Path"って書いてあるところがある、そこをクリックして選択した後に、下の[編集(I)]ボタンをクリック<br>
+          その次に[新規]をクリックして、テキストが打ち込めるようになっただろうから
+          <p class="info">%SystemRoot%;%SystemRoot%\System32;%SystemRoot%\System32\Wbem</p>
+          と追加するだけ、後は全部[ok]を押してコマンドプロンプトを再起動すれば直る(はず)</p>
+          <h3>ping.exeを直接叩く</h3>
+          <p>若干荒っぽい方法になってしまうが、他の人に教える時に上記のの環境変数を弄る方法だと厳しい時もあるので、直接叩く方法も書いておく、直接叩く場合は、コマンドプロンプトに
+          <p class="info">C:\Windows\System32\ping.exe <アドレス></p>
+          と打ってもらう方法もある、もしそれでもない場合は、本当にWindowsOSなのかをまず疑って、後は自分でping.exeを探してやってもらうしかない。</p>
+        </main>
+        <aside id="sidebar">
+          <script type="text/javascript">sidebar('../../');</script>
+        </aside>
+      </div>
+    </section>
+    <footer>
+      <script type="text/javascript">footer('../../');</script>
+    </footer>
+  </body>
+</html>
