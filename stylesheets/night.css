@@ -57,6 +57,20 @@ main {
 	color: white;
 }
 
+.quote {
+    color: #464646;
+    background: #f3f3f3;
+    border-left-color: #c4c4c4;
+}
+
+.quote:before {
+    color: #FFF;
+}
+
+.quote cite {
+    color: #888888;
+}
+
 /* サイドバー */
 
 #sidebar {

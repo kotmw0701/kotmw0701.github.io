@@ -48,6 +48,19 @@ main {
 	background-color: #006600;
 	color: white;
 }
+.quote {
+    color: #464646;
+    background: floralwhite;
+    border-left-color: #3ca5d4;
+}
+
+.quote:before {
+    color: #000;
+}
+
+.quote cite {
+    color: #888888;
+}
 
 /* サイドバー */
 
