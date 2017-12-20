@@ -13,13 +13,13 @@ a:link, a:visited {
 }
 
 h3 {
-	background-color: rgba(150, 150, 150, 0.85);
+	background-color: rgb(150, 150, 150);
 }
 
 /* ヘッダー */
 
 .header-inner {
-	background-color: rgba(210, 210, 210, 0.9);
+	background-color: rgb(210, 210, 210);
 }
 
 .header-inner a:visited, .header-inner a:link{
@@ -29,11 +29,11 @@ h3 {
 /* メイン */
 
 main {
-	background-color: rgba(220, 220, 220, 0.85);
+	background-color: rgb(220, 220, 220);
 }
 
 .post-date {
-	background-color: rgba(150, 150, 150, 0.85);
+	background-color: rgb(150, 150, 150);
 }
 
 .article-container a:link, .article-container a:visited {
@@ -65,7 +65,7 @@ main {
 /* サイドバー */
 
 #sidebar {
-	background-color: rgba(220, 220, 220, 0.85);
+	background-color: rgb(220, 220, 220);
 }
 
 .menu li:before {
@@ -75,5 +75,5 @@ main {
 /* フッター */
 
 .footer-inner {
-	background-color: rgba(210, 210, 210, 0.9);
+	background-color: rgb(210, 210, 210);
 }
