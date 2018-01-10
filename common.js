@@ -19,11 +19,10 @@ function contents(rootDir, name) {
 	$.ajax({
 		url: rootDir + name +".html",
 		cache: false,
-	        async: false,
-	        dataType: 'html',
-		success: function(html){
-			html = html.replace(/\{\$root\}/g, rootDir);
-            		document.write(html);
-		}
+	    async: false,
+	    dataType: 'html',
+	}).done(function(html){
+		html = html.replace(/\{\$root\}/g, rootDir);
+		document.write(html);
 	});
 }

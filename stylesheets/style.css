@@ -134,8 +134,16 @@ main h1, main h2, main h4{
 }
 
 .article-container {
-	margin: 0 0 10px 0;
+	padding-bottom: 7px;
+	margin-bottom: 7px;
+	border-bottom: inset 2px;
 	overflow: hidden;
+}
+
+.article-container:first-of-type {
+	padding-top: 7px;
+	margin-top: 5px;
+	border-top: inset 2px;
 }
 
 .article-container img {
@@ -251,32 +259,32 @@ footer {
 	body {
 		background-image: none;
 	}
-	
+
 	.header-inner {
 		font-size: 1rem;
 	}
-	
+
 	.header-inner a:visited, .header-inner a:link{
 		font-size: 2rem;
 	}
-	
+
 	section .container {
 		flex-flow: column;
 	}
-	
+
 	main {
 		margin: 6px 6px 3px;
 	}
-	
+
 	.table_query th {
 		text-indent: 20px;
 		display: block;
 	}
-	
+
 	.table_query td{
 		display: block;
 	}
-	
+
 	#sidebar {
 		margin: 3px 6px 6px;
 	}
