@@ -5,36 +5,68 @@
 	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.name {
 	text-align: center;
+	font-weight: bold;
+}
+.cocoa, .iris, .vanilla, .chocolate, .cicini, .pandora, .lilith {
+	width: 180px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 }
 
 .cocoa {
-	width: 180px;
-	height: 200px;
-	background: url("../images/cocoa.gif") 0 0 no-repeat;
-	background-position: center bottom;
+	background-image: url("../images/cocoa.gif");
+}
+
+.cocoa:hover {
+	background-image: url("../images/cocoa_run.gif");
 }
 
 .iris {
-	width: 180px;
-	height: 200px;
-	background: url("../images/iris.gif") 0 0 no-repeat;
-	background-position: center bottom;
+	background-image: url("../images/iris.gif");
+}
+
+.iris:hover {
+	/*まだ作ってないヨ*/
 }
 
 .vanilla {
-	width: 180px;
-	height: 200px;
-	background: url("../images/vanilla.gif") 0 0 no-repeat;
-	background-position: center bottom;
+	background-image: url("../images/vanilla.gif");
+}
+
+.vanilla:hover {
+	/*まだ作ってないヨ*/
 }
 
 .chocolate {
-	width: 180px;
-	height: 200px;
-	background: url("../images/chocolate.gif") 0 0 no-repeat;
-	background-position: center bottom;
+	background-image: url("../images/chocolate.gif");
+}
+
+.chocolate:hover {
+	/*まだ作ってないヨ*/
+}
+
+.cicini {
+	/*まだ作ってないヨ*/
+}
+
+.cicini:hover {
+	/*まだ作ってないヨ*/
+}
+
+.pandora {
+	/*まだ作ってないヨ*/
+}
+
+.pandora:hover {
+	/*まだ作ってないヨ*/
+}
+
+.lilith {
+	/*まだ作ってないヨ*/
+}
+
+.lilith:hover {
+	/*まだ作ってないヨ*/
 }
