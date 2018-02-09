@@ -1,0 +1,40 @@
+#imagebox {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.name {
+	text-align: center;
+}
+
+.cocoa {
+	width: 180px;
+	height: 200px;
+	background: url("../images/cocoa.gif") 0 0 no-repeat;
+	background-position: center bottom;
+}
+
+.iris {
+	width: 180px;
+	height: 200px;
+	background: url("../images/iris.gif") 0 0 no-repeat;
+	background-position: center bottom;
+}
+
+.vanilla {
+	width: 180px;
+	height: 200px;
+	background: url("../images/vanilla.gif") 0 0 no-repeat;
+	background-position: center bottom;
+}
+
+.chocolate {
+	width: 180px;
+	height: 200px;
+	background: url("../images/chocolate.gif") 0 0 no-repeat;
+	background-position: center bottom;
+}
