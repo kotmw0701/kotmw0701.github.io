@@ -10,7 +10,7 @@
 }
 .cocoa, .iris, .vanilla, .chocolate, .cicini, .pandora, .lilith {
 	width: 180px;
-	height: 200px;
+	height: 210px;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -48,7 +48,7 @@
 }
 
 .cicini {
-	/*まだ作ってないヨ*/
+	background-image: url("../images/cicini.gif");
 }
 
 .cicini:hover {
