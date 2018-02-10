@@ -28,7 +28,7 @@
 }
 
 .iris:hover {
-	/*まだ作ってないヨ*/
+	background-image: url("../images/iris_run.gif");
 }
 
 .vanilla {
