@@ -70,3 +70,9 @@
 .lilith:hover {
 	/*まだ作ってないヨ*/
 }
+
+@media only screen and (max-width: 408px) {
+	#imagebox {
+		justify-content: space-around;
+	}
+}
