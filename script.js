@@ -1,4 +1,4 @@
-﻿function switchingStyles() {
+function switchingStyles() {
 	var date = new Date();
 	var hour = date.getHours();
 
