@@ -4,10 +4,11 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Gifドット絵 | そこら辺の雑記帳</title>
+    <title>テストページ | そこら辺の雑記帳</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../common.js"></script>
     <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="search.js"></script>
     <link rel="stylesheet" href="../stylesheets/normalize.css">
     <link rel="stylesheet" href="../stylesheets/style.css">
     <link rel="stylesheet" href="../stylesheets/images.css">
@@ -25,28 +26,15 @@
             <ol>
               <li><a href="../index.html">トップページ</a></li>
               <li><a href="index.html">制作物</a></li>
-              <li>ドット絵</li>
+              <li>テストページ</li>
             </ol>
           </div>
-          <h1>ドット絵</h1>
-          <p>最近はまってる弾幕(?)アクションゲー<br>
-            キャラが可愛い(｀・ω・´)<br>
-            結構やりこみ要素多めでオススメですよ<br>
-            ページの下にSteamストアページへのリンクを貼っておいたので、気になる方はどうぞ<br>
-            以下自分がやりながらトレースしたキャラたちのgif</p>
-          <div id="imagebox">
-            <!--テンプレート
-              <div class="name"><div class=""></div></div>
-          -->
-            <div><div class="cocoa"></div>cocoa</div>
-            <div><div class="iris"></div>iris</div>
-            <div><div class="vanilla"></div>vanilla</div>
-            <div><div class="chocolate"></div>chocolate</div>
-            <div><div class="cicini"></div>cicini</div>
-            <div><div class="pandora"></div>pandora<br>作成中...</div>
-            <div><div class="lilith"></div>lilith<br>作成中...</div>
-          </div>
-          <iframe src="https://store.steampowered.com/widget/400910/" frameborder="0" height="190" width="100%" style="max-width: 650px"></iframe>
+          <h1>テストページ</h1>
+          <form name="form" action="musicgameview.html">
+            <input class="textform" type="text" name="title" placeholder="Title"><br>
+            <input class="textform" type="text" name="artist" placeholder="Artist">
+            <input type="button" value="search" onclick="Search();">
+          </form>
         </main>
         <aside id="sidebar">
           <script type="text/javascript">sidebar('../');</script>
