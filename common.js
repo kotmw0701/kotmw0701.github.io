@@ -15,7 +15,7 @@ function article(rootDir) {
 }
 
 function contents(rootDir, name) {
-	if(rootDir == null) rootDir = "./";
+	if(rootDir == null) rootDir = "/";
 	$.ajax({
 		url: rootDir + name +".html",
 		cache: false,
