@@ -1,6 +1,27 @@
 <?php
 $db = new SQLite3("Chunithm.db");
-$statement = $db->prepare('SELECT * FROM music WHERE Category LIKE :category');
+$sql = 'SELECT * FROM music';
+$category = ' Category LIKE :category';
+$title = ' Title LIKE :title';
+$artist = ' Artist LIKE :artist';
+
+if(isset($_POST['category']) && $_POST['category'] !== '') {
+  $category_value = $_POST['category'];
+  $sql .= ' WHERE'.$category;
+}
+if(isset($_POST['title']) && $_POST['title'] !== '') {
+  $title_value = $_POST['title'];
+  $sql .= (strstr($sql, 'WHERE') ? ' AND' : ' WHERE').$title;
+}
+if(isset($_POST['artist']) && $_POST['artist'] !== '') {
+  $artist_value = $_POST['artist'];
+  $sql .= (strstr($sql, 'WHERE') ? ' AND' : ' WHERE').$artist;
+}
+$statement = $db->prepare($sql);
+if(isset($category_value)) $statement->bindValue(':category', $category_value);
+if(isset($title_value)) $statement->bindValue(':title', $_POST['title_match'] === 'partinal' ? '%'.$title_value.'%' : $title_value);
+if(isset($artist_value)) $statement->bindValue(':artist', $_POST['artist_match'] === 'partinal' ? '%'.$artist_value.'%' : $artist_value);
+$result = $statement->execute();
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +33,6 @@ $statement = $db->prepare('SELECT * FROM music WHERE Category LIKE :category');
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../common.js"></script>
     <script type="text/javascript" src="../script.js"></script>
-    <script type="text/javascript" src="search.js"></script>
     <link rel="stylesheet" href="../stylesheets/normalize.css">
     <link rel="stylesheet" href="../stylesheets/style.css">
     <link rel="stylesheet" href="../stylesheets/images.css">
@@ -30,28 +50,30 @@ $statement = $db->prepare('SELECT * FROM music WHERE Category LIKE :category');
             <ol>
               <li><a href="../index.html">トップページ</a></li>
               <li><a href="index.html">制作物</a></li>
-              <li>テストページ</li>
+              <li>音ゲー曲検索 β版</li>
             </ol>
           </div>
           <h1>音ゲー曲検索 β版(ウニの曲のみ一時的対応</h1>
-          <form name="form" action="musicgameview.php">
+          <form name="form" action="musicgameview.php" method="POST">
             <input class="textform" type="text" name="category" placeholder="Category"><br>
-            <!--<input class="textform" type="text" name="artist" placeholder="Artist">-->
+            <input class="textform" type="text" name="title" placeholder="Title">
+            <select name="title_match">
+              <option value="partinal" selected>部分一致</option>
+              <option value="exact">完全一致</option>
+            </select><br>
+            <input class="textform" type="text" name="artist" placeholder="Artist">
+            <select name="artist_match">
+              <option value="partinal" selected>部分一致</option>
+              <option value="exact">完全一致</option>
+            </select><br>
             <input type="submit" value="search">
           </form>
-          
           <?php
-          if(isset($_GET['category'])) {
-            $category = $_GET['category'];
-            $statement->bindValue(':category', $category);
-
-            $result = $statement->execute();
-            print "<table><tr><th>タイトル</th><th>アーティスト</th></tr>";
-            while($row = $result->fetchArray()) {
-              print "<tr><td>".$row[1]."</td><td>".$row[2]."</td></tr>";
+            print '<table><th>タイトル</th><th>アーティスト</th><th>BPM</th><th>ウニ</th><th>舞</th><th>ボルテ</th></tr>';
+            while($row = $result->fetchArray(SQLITE3_NUM)) {
+              print "<tr><td><a href=\"musicdata.php?title=$row[1]\">$row[1]</a></td><td>$row[2]</td><td>$row[3]</td><td>〇</td><td></td><td></td></tr>";
             }
-            print "</table>";
-          }
+            print '</table>';
           ?>
         </main>
         <!--
