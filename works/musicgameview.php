@@ -18,9 +18,9 @@ if(isset($_POST['artist']) && $_POST['artist'] !== '') {
   $sql .= (strstr($sql, 'WHERE') ? ' AND' : ' WHERE').$artist;
 }
 $statement = $db->prepare($sql);
-if(isset($category_value)) $statement->bindValue(':category', $category_value);
-if(isset($title_value)) $statement->bindValue(':title', $_POST['title_match'] === 'partinal' ? '%'.$title_value.'%' : $title_value);
-if(isset($artist_value)) $statement->bindValue(':artist', $_POST['artist_match'] === 'partinal' ? '%'.$artist_value.'%' : $artist_value);
+if(isset($category_value)) $statement->bindValue('category', $category_value);
+if(isset($title_value)) $statement->bindValue('title', $_POST['title_match'] === 'partinal' ? '%'.$title_value.'%' : $title_value);
+if(isset($artist_value)) $statement->bindValue('artist', $_POST['artist_match'] === 'partinal' ? '%'.$artist_value.'%' : $artist_value);
 $result = $statement->execute();
 ?>
 <!DOCTYPE html>
