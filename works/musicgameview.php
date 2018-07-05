@@ -24,7 +24,7 @@ if(isset($artist_value)) $statement->bindValue('artist', $_POST['artist_match'] 
 $result = $statement->execute();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang = ja>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
