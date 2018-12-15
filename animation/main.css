@@ -8,6 +8,14 @@ html, body {
     background-color: black;
 }
 
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    text-align: center;
+}
+
 .container > div, .logo > div{
     position: absolute;
     top: 0;
@@ -19,4 +27,19 @@ html, body {
 
 .SCP132JP {
     color: white;
+}
+
+.foundation {
+    top: 100px;
+    width: 320px;
+    height: 280px;
+    background: url("Foundation.png") no-repeat;
+    background-size: contain;
+    animation: foundation 1s ease 3s 1 alternate forwards;
+}
+
+@keyframes foundation {
+    100% {
+        left: 300px;
+    }
 }

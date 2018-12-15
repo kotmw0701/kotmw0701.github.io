@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 .logo {
-    right: 25%;
-    width: 250px;
-    height: 250px;
-    /* animation: logoMove 1s ease 3s 1 alternate forwards; */
+    background-color: black;
+    width: 320px;
+    height: 300px;
+    animation: logoMove 1s ease 3s 1 alternate forwards;
 }
 
 .circle {
@@ -72,7 +72,7 @@
 } 
 
 .allowInner {
-    margin: 0 auto;
+    margin: -1px auto 0;
     width: 0;
     height: 0;
     border-top: 30px solid white;
@@ -137,11 +137,11 @@
     }
 }
 
-/* @keyframes logoMove {
+@keyframes logoMove {
     0% {
         right: 0;
     }
     100% {
-        right: 25%;
+        right: 350px;
     }
-} */
+}
