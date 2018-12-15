@@ -2,8 +2,9 @@
 
 .logo {
     background-color: black;
-    width: 320px;
-    height: 300px;
+    max-width: 320px;
+    min-width: 240px;
+    max-height: 300px;
     animation: logoMove 1s ease 3s 1 alternate forwards;
 }
 
@@ -142,6 +143,10 @@
         right: 0;
     }
     100% {
-        right: 350px;
+        right: 17%;
     }
+}
+
+@media screen and (max-width: 480px) {
+
 }
