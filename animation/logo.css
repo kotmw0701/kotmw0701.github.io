@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.logo {
+    right: 25%;
+    width: 250px;
+    height: 250px;
+    /* animation: logoMove 1s ease 3s 1 alternate forwards; */
+}
+
+.circle {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.circle2 {
+    background-color: black;
+    width: 236px;
+    height: 236px;
+    border-radius: 50%;
+}
+
+.circle3 {
+    width: 130px;
+    height: 130px;
+    border: 12px solid white;
+    border-radius: 50%;
+}
+
+.trape {
+    width: 100px;
+    height: 280px;
+}
+
+
+.btrape {
+    margin: 0 -2px;
+    width: 68px;
+    height: 6px;
+    border-bottom: 40px solid black;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.trapeInner {
+    margin: 0 auto;
+    width: 80px;
+    height: 0px;
+    border-bottom: 40px solid white;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.trape1 {
+    animation: trapeani1 3s linear 0s 1 normal none;
+}
+
+.trape2 {
+    transform: rotate(120deg);
+    animation: trapeani2 3s linear 0s 1 normal none;
+}
+
+.trape3 {
+    transform: rotate(240deg);
+    animation: trapeani3 3s linear 0s 1 normal none;
+}
+
+.allow {
+    width: 100px;
+    height: 190px;
+} 
+
+.allowInner {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 30px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+.allowStick {
+    margin: 0 auto;
+    width: 9px;
+    height: 55px;
+    background-color: white;
+}
+
+.allow1 {
+    animation: allowani1 3s linear 0s 1 normal none;
+}
+
+.allow2 {
+    transform: rotate(120deg);
+    animation: allowani2 3s linear 0s 1 normal none;
+}
+
+.allow3 {
+    transform: rotate(240deg);
+    animation: allowani3 3s linear 0s 1 normal none;
+}
+
+@keyframes trapeani1 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes trapeani2 {
+    100% {
+        transform: rotate(480deg);
+    }
+}
+
+@keyframes trapeani3 {
+    100% {
+        transform: rotate(600deg);
+    }
+}
+
+@keyframes allowani1 {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes allowani2 {
+    100% {
+        transform: rotate(-240deg);
+    }
+}
+
+@keyframes allowani3 {
+    100% {
+        transform: rotate(-120deg);
+    }
+}
+
+/* @keyframes logoMove {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 25%;
+    }
+} */
