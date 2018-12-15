@@ -1,9 +1,9 @@
 <?php
-$db = new SQLite3("Chunithm.db");
-$sql = 'SELECT * FROM music';
-$category = ' Category LIKE :category';
-$title = ' Title LIKE :title';
-$artist = ' Artist LIKE :artist';
+$db = new SQLite3("MusicGames.db");
+$sql = 'SELECT * FROM chunithm';
+$category = ' category LIKE :category';
+$title = ' title LIKE :title';
+$artist = ' artist LIKE :artist';
 
 if(isset($_POST['category']) && $_POST['category'] !== '') {
   $category_value = $_POST['category'];
@@ -71,7 +71,7 @@ $result = $statement->execute();
           <?php
             print '<table><th>タイトル</th><th>アーティスト</th><th>BPM</th><th>ウニ</th><th>舞</th><th>ボルテ</th></tr>';
             while($row = $result->fetchArray(SQLITE3_NUM)) {
-              print "<tr><td><a href=\"musicdata.php?title=$row[1]\">$row[1]</a></td><td>$row[2]</td><td>$row[3]</td><td>〇</td><td></td><td></td></tr>";
+              print "<tr><td><a href=\"musicdata.php?title=$row[3]\">$row[3]</a></td><td>$row[4]</td><td>$row[5]</td><td>〇</td><td></td><td></td></tr>";
             }
             print '</table>';
           ?>

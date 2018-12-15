@@ -1,9 +1,9 @@
 <?php
 if(!isset($_GET['title'])) return;
 $title = $_GET['title'];
-$db = new SQLite3("Chunithm.db");
+$db = new SQLite3("MusicGames.db");
 
-$statement = $db->prepare('SELECT * FROM music WHERE Title = :title');
+$statement = $db->prepare('SELECT * FROM chunithm WHERE title = :title');
 $statement->bindValue('title', $title);
 
 $result = $statement->execute();
@@ -42,7 +42,7 @@ $result = $statement->execute();
           <h1><?php echo $title;?></h1>
           <?php
           $row = $result->fetchArray();
-          print $row[0]." : ".$row[1];
+          print $row[4]." : ".$row[5];
           ?>
         </main>
         <aside id="sidebar">
