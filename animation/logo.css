@@ -22,21 +22,21 @@
 }
 
 .circle3 {
-    width: 130px;
-    height: 130px;
-    border: 12px solid white;
+    width: 135px;
+    height: 135px;
+    border: 16px solid white;
     border-radius: 50%;
 }
 
 .trape {
-    width: 100px;
-    height: 280px;
+    width: 200px;
+    height: 278px;
 }
 
 
 .btrape {
     margin: 0 -2px;
-    width: 68px;
+    width: 72px;
     height: 6px;
     border-bottom: 40px solid black;
     border-left: 8px solid transparent;
@@ -45,7 +45,7 @@
 
 .trapeInner {
     margin: 0 auto;
-    width: 80px;
+    width: 85px;
     height: 0px;
     border-bottom: 40px solid white;
     border-left: 8px solid transparent;
@@ -53,52 +53,52 @@
 }
 
 .trape1 {
-    animation: trapeani1 3s linear 0s 1 normal none;
+    animation: trapeani1 2500ms linear 0s 1 normal none;
 }
 
 .trape2 {
     transform: rotate(120deg);
-    animation: trapeani2 3s linear 0s 1 normal none;
+    animation: trapeani2 2500ms linear 0s 1 normal none;
 }
 
 .trape3 {
     transform: rotate(240deg);
-    animation: trapeani3 3s linear 0s 1 normal none;
+    animation: trapeani3 2500ms linear 0s 1 normal none;
 }
 
 .allow {
     width: 100px;
-    height: 190px;
+    height: 193px;
 } 
 
 .allowInner {
     margin: -1px auto 0;
     width: 0;
     height: 0;
-    border-top: 30px solid white;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
+    border-top: 32px solid white;
+    border-right: 17px solid transparent;
+    border-left: 17px solid transparent;
 }
 
 .allowStick {
     margin: 0 auto;
-    width: 9px;
-    height: 55px;
+    width: 10px;
+    height: 59px;
     background-color: white;
 }
 
 .allow1 {
-    animation: allowani1 3s linear 0s 1 normal none;
+    animation: allowani1 2500ms linear 0s 1 normal none;
 }
 
 .allow2 {
     transform: rotate(120deg);
-    animation: allowani2 3s linear 0s 1 normal none;
+    animation: allowani2 2500ms linear 0s 1 normal none;
 }
 
 .allow3 {
     transform: rotate(240deg);
-    animation: allowani3 3s linear 0s 1 normal none;
+    animation: allowani3 2500ms linear 0s 1 normal forwards;
 }
 
 @keyframes trapeani1 {
