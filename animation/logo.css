@@ -5,7 +5,7 @@
     max-width: 320px;
     min-width: 240px;
     max-height: 300px;
-    animation: logoMove 1s ease 0s 1 alternate forwards;
+    animation: logoMove 1s ease 2500ms 1 alternate forwards;
 }
 
 .circle {

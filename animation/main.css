@@ -35,7 +35,7 @@ footer {
     width: 55%;
     height: 55%;
     fill: white;
-    animation: scp 1s ease 0s 1 alternate forwards;
+    animation: scp 1s ease 2500ms 1 alternate forwards;
 }
 
 .scpfull {
@@ -44,9 +44,9 @@ footer {
     height: 55%;
     stroke: white;
     stroke-width: 1px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s ease 0s 1 normal forwards;
+    stroke-dasharray: 175;
+    stroke-dashoffset: 175;
+    animation: dash 4s ease 3s 1 normal forwards;
 }
 
 
