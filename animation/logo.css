@@ -1,10 +1,11 @@
 @charset "utf-8";
 
 .logo {
+    bottom: 20% !important;
     max-width: 320px;
     min-width: 240px;
     max-height: 300px;
-    animation: logoMove 1s ease 3s 1 alternate forwards;
+    animation: logoMove 1s ease 0s 1 alternate forwards;
 }
 
 .circle {
@@ -53,17 +54,17 @@
 }
 
 .trape1 {
-    animation: trapeani1 2500ms linear 0s 1 normal none;
+    animation: trapeani1 2500ms ease-out 0s 1 normal none;
 }
 
 .trape2 {
     transform: rotate(120deg);
-    animation: trapeani2 2500ms linear 0s 1 normal none;
+    animation: trapeani2 2500ms ease-out 0s 1 normal none;
 }
 
 .trape3 {
     transform: rotate(240deg);
-    animation: trapeani3 2500ms linear 0s 1 normal none;
+    animation: trapeani3 2500ms ease-out 0s 1 normal none;
 }
 
 .allow {
@@ -88,17 +89,17 @@
 }
 
 .allow1 {
-    animation: allowani1 2500ms linear 0s 1 normal none;
+    animation: allowani1 2500ms ease-out 0s 1 normal none;
 }
 
 .allow2 {
     transform: rotate(120deg);
-    animation: allowani2 2500ms linear 0s 1 normal none;
+    animation: allowani2 2500ms ease-out 0s 1 normal none;
 }
 
 .allow3 {
     transform: rotate(240deg);
-    animation: allowani3 2500ms linear 0s 1 normal forwards;
+    animation: allowani3 2500ms ease-out 0s 1 normal forwards;
 }
 
 @keyframes trapeani1 {
@@ -142,7 +143,7 @@
         right: 0;
     }
     100% {
-        right: 17%;
+        right: 37%;
     }
 }
 
