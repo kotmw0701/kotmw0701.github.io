@@ -2,9 +2,9 @@
 
 .logo {
     /* background-color: #8888; */
-    bottom: 10%;
-    width: 23%;
-    height: 23%;
+    bottom: 20%;
+    width: 40%;
+    height: 40%;
     animation: logoMove 1s ease 2500ms 1 alternate forwards;
 }
 
@@ -38,7 +38,7 @@
         right: 0;
     }
     100% {
-        right: 36%;
+        right: 55%;
     }
 }
 
