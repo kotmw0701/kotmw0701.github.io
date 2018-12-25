@@ -1,11 +1,10 @@
 @charset "utf-8";
 
-html, body {
+html, body, main {
     margin: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: black;
 }
 
 footer {
@@ -16,37 +15,92 @@ footer {
     text-align: center;
 }
 
-.background {
+#background {
     height: 100%;
     width: 100%;
 }
 
-.background::before, .background::after {
+#background *:nth-child(odd) {
+    height: 10vh;
+    width: 100%;
+}
+
+#background *:nth-child(even) {
+    height: 35%;
+    width: 100%;
+}
+
+#background *::before, 
+#background *::after {
+    content: '';
+    display: block;
     height: 100%;
     width: 100%;
-    background-color: #222;
 }
 
-.background::before {
-    animation: leftback 500ms cubic-bezier(0, 0, 0.26, 1.01) 0s 1 both;
+#background *:nth-child(1)::before,
+#background *:nth-child(5)::before {
+    height: 0;
+    border-top: solid 10vh black;
+    border-right: solid 10vh transparent;
+    animation: back-left 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
 }
 
-.background::before {
-    animation: rightback 500ms cubic-bezier(0, 0, 0.26, 1.01) 0s 1 both;
+#background *:nth-child(1)::after,
+#background *:nth-child(5)::after {
+    height: 0;
+    border-bottom: solid 10vh black;
+    border-left: solid 10vh transparent;
+    animation: back-right 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+}
+
+#background *:nth-child(3)::before {
+    height: 0;
+    border-bottom: solid 10vh black;
+    border-right: solid 10vh transparent;
+    animation: back-left 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+}
+
+#background *:nth-child(3)::after {
+    height: 0;
+    border-top: solid 10vh black;
+    border-left: solid 10vh transparent;
+    animation: back-right 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+}
+
+
+#background *:nth-child(2)::before {
+    background-color: black;
+    animation: back-left-a 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+}
+
+#background *:nth-child(2)::after {
+    background-color: black;
+    animation: back-right-a 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+}
+
+#background *:nth-child(4)::before {
+    background-color: black;
+    animation: back-left-b 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+}
+
+#background *:nth-child(4)::after {
+    background-color: black;
+    animation: back-right-b 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
 }
 
 .container {
     /* background-color: #333; */
     margin: 0 auto;
-    width: 150vh;
-    height: 150vh;
+    width: 150vmin;
+    height: 150vmin;
 }
 
 .scp_foundation {
     /* background-color: #222; */
-    width: 80vh;
-    height: 80vh;
-    animation: rising 1s ease 5s normal forwards;
+    width: 80vmin;
+    height: 80vmin;
+    animation: rising 1s ease 8.5s normal forwards;
 }
 
 .SCP132JP {
@@ -60,7 +114,7 @@ footer {
     width: 55%;
     height: 45%;
     fill: white;
-    animation: scp 1s ease 2500ms 1 alternate forwards;
+    animation: scp 1s ease 6s 1 alternate forwards;
 }
 
 .scpfull {
@@ -68,12 +122,12 @@ footer {
     top: 23% !important;
     width: 90%;
     height: 15%;
-    /* fill: white; */
+    fill: transparent;
     stroke: white;
     stroke-width: 1px;
     stroke-dasharray: 175;
     stroke-dashoffset: 175;
-    animation: dash 3s ease-out 2s 1 normal forwards;
+    animation: dash 3s ease-out 5s 1 normal forwards;
 }
 
 /* .welcome {
@@ -169,22 +223,34 @@ footer {
     }
 }
 
-@keyframes leftback {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+@keyframes back-left {
+    0% { transform: translateX(calc(-100vw - 10vh)); }
+    100% { transform: translateX(calc(-49.9vw - calc(10vh / 2))); }
+}
+/* translateY(-100%)をすると，上にかぶさってくるから */
+@keyframes back-right {
+    0% { transform: translateX(100vw) translateY(-100%); }
+    100% { transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); }
 }
 
-@keyframes leftback {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+@keyframes back-left-a {
+    0% { transform: translateX(calc(-100% - 10vh)); }
+    100% { transform: translateX(calc(-50% - calc(10vh / 2))); }
+}
+/* translateY(-100%)をすると，上にかぶさってくるから */
+@keyframes back-right-a {
+    0% { transform: translateX(100%) translateY(-100%); }
+    100% { transform: translateX(calc(49.9% - calc(10vh / 2))) translateY(-100%); }
+}
+
+@keyframes back-left-b {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(calc(-50% + calc(10vh / 2))); }
+}
+/* translateY(-100%)をすると，上にかぶさってくるから */
+@keyframes back-right-b {
+    0% { transform: translateX(calc(100% + 10vh)) translateY(-100%); }
+    100% { transform: translateX(calc(49.9% + calc(10vh / 2))) translateY(-100%); }
 }
 
 /* @keyframes welcome {

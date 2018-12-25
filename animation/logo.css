@@ -5,31 +5,49 @@
     bottom: 20%;
     width: 40%;
     height: 40%;
-    animation: logoMove 1s ease 2500ms 1 alternate forwards;
+    animation: logoMove 1s ease 6s 1 alternate forwards;
 }
 
 .logo_out {
     width: 100%;
     height: 100%;
     fill: white;
-    animation: logo_out 2500ms ease-out 0s 1 normal none;
+    animation: logo_out 6s ease-out 0s 1 normal;
 }
 
 .logo_in {
     width: 100%;
     height: 100%;
     fill: white;
-    animation: logo_in 2500ms ease-out 0s 1 normal none;
+    animation: logo_in 6s ease-out 0s 1 normal;
 }
 @keyframes logo_out {
+    0% {
+        fill: black;
+    }
+    48% {
+        fill: black;
+    }
+    52% {
+        fill: white;
+    }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(1080deg);
     }
 }
 
 @keyframes logo_in {
+    0% {
+        fill: black;
+    }
+    48% {
+        fill: black;
+    }
+    52% {
+        fill: white;
+    }
     100% {
-        transform: rotate(-360deg);
+        transform: rotate(-1080deg);
     }
 }
 
