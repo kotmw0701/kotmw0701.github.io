@@ -26,7 +26,7 @@ footer {
 }
 
 #background *:nth-child(even) {
-    height: 35%;
+    height: calc(35% + 1px);
     width: 100%;
 }
 
@@ -36,6 +36,11 @@ footer {
     display: block;
     height: 100%;
     width: 100%;
+    animation: 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+}
+
+#background *::after {
+    height: calc(100% + 1px);
 }
 
 #background *:nth-child(1)::before,
@@ -43,7 +48,7 @@ footer {
     height: 0;
     border-top: solid 10vh black;
     border-right: solid 10vh transparent;
-    animation: back-left 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+    animation-name: back-left;
 }
 
 #background *:nth-child(1)::after,
@@ -51,42 +56,42 @@ footer {
     height: 0;
     border-bottom: solid 10vh black;
     border-left: solid 10vh transparent;
-    animation: back-right 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+    animation-name: back-right;
 }
 
 #background *:nth-child(3)::before {
     height: 0;
     border-bottom: solid 10vh black;
     border-right: solid 10vh transparent;
-    animation: back-left 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+    animation-name: back-left;
 }
 
 #background *:nth-child(3)::after {
     height: 0;
     border-top: solid 10vh black;
     border-left: solid 10vh transparent;
-    animation: back-right 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+    animation-name: back-right;
 }
 
 
 #background *:nth-child(2)::before {
     background-color: black;
-    animation: back-left-a 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+    animation-name: back-left-a;
 }
 
 #background *:nth-child(2)::after {
     background-color: black;
-    animation: back-right-a 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+    animation-name: back-right-a;
 }
 
 #background *:nth-child(4)::before {
     background-color: black;
-    animation: back-left-b 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+    animation-name: back-left-b;
 }
 
 #background *:nth-child(4)::after {
     background-color: black;
-    animation: back-right-b 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+    animation-name: back-right-b;
 }
 
 .container {
@@ -184,15 +189,6 @@ footer {
     left: 0;
     margin: auto;
 }
-
-/* .foundation {
-    opacity: 0;
-    width: 25%;
-    height: 25%;
-    background: url("Foundation.png") no-repeat;
-    background-size: contain;
-    animation: foundation 1s ease 3s 1 alternate forwards;
-} */
 
 @keyframes scp {
     0% {
