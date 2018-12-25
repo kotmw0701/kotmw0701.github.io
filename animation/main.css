@@ -42,57 +42,56 @@ footer {
 #background *:nth-child(odd)::before,
 #background *:nth-child(odd)::after {
     height: 0;
+    border-style: solid;
+    border-color: black transparent;
 }
 
 #background *:nth-child(even)::before,
 #background *:nth-child(even)::after {
     background-color: black;
+    border: 0 solid black;
 }
 
 #background *:nth-child(1)::before,
 #background *:nth-child(5)::before {
-    border-top: solid 10vh black;
-    border-right: solid 10vh transparent;
-    animation-name: back-left;
+    border-width: 10vh 10vh 0 0;
+    animation-name: back-left, bordercolor;
 }
 
 #background *:nth-child(1)::after,
 #background *:nth-child(5)::after {
-    border-bottom: solid 10vh black;
-    border-left: solid 10vh transparent;
-    animation-name: back-right;
+    border-width: 0 0 10vh 10vh;
+    animation-name: back-right, bordercolor;
 }
 
 #background *:nth-child(3)::before {
-    border-bottom: solid 10vh black;
-    border-right: solid 10vh transparent;
-    animation-name: back-left;
+    border-width: 0 10vh 10vh 0;
+    animation-name: back-left, bordercolor;
 }
 
 #background *:nth-child(3)::after {
-    border-top: solid 10vh black;
-    border-left: solid 10vh transparent;
-    animation-name: back-right;
+    border-width: 10vh 0 0 10vh;
+    animation-name: back-right, bordercolor;
 }
 
 
 #background *:nth-child(2)::before {
-    animation-name: back-left-a;
+    animation-name: back-left-a, backcolor;
 }
 
 /* afterだけにborder設定しないと白線が消えない */
 #background *:nth-child(2)::after {
-    border: 1px solid black;
-    animation-name: back-right-a;
+    border-width: 1px 0;
+    animation-name: back-right-a, backcolor, bordercolor;
 }
 
 #background *:nth-child(4)::before {
-    animation-name: back-left-b;
+    animation-name: back-left-b, backcolor;
 }
 
 #background *:nth-child(4)::after {
-    border: 1px solid black;
-    animation-name: back-right-b;
+    border-width: 1px 0;
+    animation-name: back-right-b, backcolor, bordercolor;
 }
 
 .container {
@@ -248,6 +247,16 @@ footer {
 @keyframes back-right-b {
     0% { transform: translateX(calc(100vw + 10vh)) translateY(-100%); }
     100% { transform: translateX(calc(49.9vw + calc(10vh / 2))) translateY(-100%); }
+}
+
+@keyframes bordercolor {
+    0% { border-color: #888 transparent; }
+    100% { border-color: black transparent; }
+}
+
+@keyframes backcolor {
+    0% { background-color: #888; }
+    100% { background-color: black; }
 }
 
 /* @keyframes welcome {
