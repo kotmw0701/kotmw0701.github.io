@@ -26,7 +26,7 @@ footer {
 }
 
 #background *:nth-child(even) {
-    height: calc(35% + 1px);
+    height: 35%;
     width: 100%;
 }
 
@@ -34,18 +34,23 @@ footer {
 #background *::after {
     content: '';
     display: block;
-    height: 100%;
+    height: calc(100% + 1px);
     width: 100%;
     animation: 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
 }
 
-#background *::after {
-    height: calc(100% + 1px);
+#background *:nth-child(odd)::before,
+#background *:nth-child(odd)::after {
+    height: 0;
+}
+
+#background *:nth-child(even)::before,
+#background *:nth-child(even)::after {
+    background-color: black;
 }
 
 #background *:nth-child(1)::before,
 #background *:nth-child(5)::before {
-    height: 0;
     border-top: solid 10vh black;
     border-right: solid 10vh transparent;
     animation-name: back-left;
@@ -53,21 +58,18 @@ footer {
 
 #background *:nth-child(1)::after,
 #background *:nth-child(5)::after {
-    height: 0;
     border-bottom: solid 10vh black;
     border-left: solid 10vh transparent;
     animation-name: back-right;
 }
 
 #background *:nth-child(3)::before {
-    height: 0;
     border-bottom: solid 10vh black;
     border-right: solid 10vh transparent;
     animation-name: back-left;
 }
 
 #background *:nth-child(3)::after {
-    height: 0;
     border-top: solid 10vh black;
     border-left: solid 10vh transparent;
     animation-name: back-right;
@@ -75,22 +77,21 @@ footer {
 
 
 #background *:nth-child(2)::before {
-    background-color: black;
     animation-name: back-left-a;
 }
 
+/* afterだけにborder設定しないと白線が消えない */
 #background *:nth-child(2)::after {
-    background-color: black;
+    border: 1px solid black;
     animation-name: back-right-a;
 }
 
 #background *:nth-child(4)::before {
-    background-color: black;
     animation-name: back-left-b;
 }
 
 #background *:nth-child(4)::after {
-    background-color: black;
+    border: 1px solid black;
     animation-name: back-right-b;
 }
 
@@ -105,7 +106,7 @@ footer {
     /* background-color: #222; */
     width: 80vmin;
     height: 80vmin;
-    animation: rising 1s ease 8.5s normal forwards;
+    /* animation: rising 1s ease 8.5s normal forwards; */
 }
 
 .SCP132JP {
@@ -213,11 +214,11 @@ footer {
     }
 }
 
-@keyframes rising {
+/* @keyframes rising {
     100% {
         bottom: 50%;
     }
-}
+} */
 
 @keyframes back-left {
     0% { transform: translateX(calc(-100vw - 10vh)); }
@@ -230,23 +231,23 @@ footer {
 }
 
 @keyframes back-left-a {
-    0% { transform: translateX(calc(-100% - 10vh)); }
-    100% { transform: translateX(calc(-50% - calc(10vh / 2))); }
+    0% { transform: translateX(calc(-100vw - 10vh)); }
+    100% { transform: translateX(calc(-50vw - calc(10vh / 2))); }
 }
 /* translateY(-100%)をすると，上にかぶさってくるから */
 @keyframes back-right-a {
-    0% { transform: translateX(100%) translateY(-100%); }
-    100% { transform: translateX(calc(49.9% - calc(10vh / 2))) translateY(-100%); }
+    0% { transform: translateX(100vw) translateY(-100%); }
+    100% { transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); }
 }
 
 @keyframes back-left-b {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(calc(-50% + calc(10vh / 2))); }
+    0% { transform: translateX(-100vw); }
+    100% { transform: translateX(calc(-50vw + calc(10vh / 2))); }
 }
 /* translateY(-100%)をすると，上にかぶさってくるから */
 @keyframes back-right-b {
-    0% { transform: translateX(calc(100% + 10vh)) translateY(-100%); }
-    100% { transform: translateX(calc(49.9% + calc(10vh / 2))) translateY(-100%); }
+    0% { transform: translateX(calc(100vw + 10vh)) translateY(-100%); }
+    100% { transform: translateX(calc(49.9vw + calc(10vh / 2))) translateY(-100%); }
 }
 
 /* @keyframes welcome {
