@@ -1,0 +1,8 @@
+<svg 
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="250" height="100"
+  viewBox="0 0 250 100"
+  preserveAspectRatio="none" >
+    <path d="M0,100 L0,20 q25,20 50,10 t50,0 t50,0 t50,0 t50,0 L250,100 Z" stroke-width="1" stroke="#666666" fill="#666666"></path>
+</svg>

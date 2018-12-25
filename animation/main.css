@@ -115,9 +115,9 @@ footer {
 .scp {
     /* background-color: #8777; */
     opacity: 0;
-    bottom: 20% !important;
-    width: 55%;
-    height: 45%;
+    bottom: 23% !important;
+    width: 60%;
+    height: 50%;
     fill: white;
     animation: scp 1s ease 6s 1 alternate forwards;
 }
