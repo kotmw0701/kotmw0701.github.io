@@ -6,22 +6,63 @@ html, body {
     margin: 0;
 }
 
+/* h1 {
+    margin: 0;
+} */
+
+body {
+    background-color: rgba(255, 215, 215, 0.5);
+}
+
 #intro {
-    background-color: rgba(203, 255, 238, 0.5);
+    background-color: #aad5ff;
     position: absolute;
+    overflow: hidden;
     height: 100%;
     width: 100%;
+}
+
+#intro > svg {
+    position: absolute;
+}
+
+.star {
+    height: 10%;
+    width: 10%;
 }
 
 .back {
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    fill: cornflowerblue;
+    margin: 0 calc(50% - 50vw);
+    height: 100vh;
+    width: auto;
+    transform: scale(1, -1);
 }
 
-.back * {
-    position: absolute;
-    bottom: 0;
+#intro > .back:nth-child(1) {
+    fill: #0080ff;
+}
+
+#intro > .back:nth-child(2) {
+    fill: #006ad5;
+}
+
+#intro > .back:nth-child(3) {
+    fill: #0055aa;
+}
+
+@keyframes back1 {
+    0% {
+
+    }
+    100% {
+
+    }
+}
+
+@keyframes back2 {
+    
+}
+
+@keyframes back3 {
+    
 }
