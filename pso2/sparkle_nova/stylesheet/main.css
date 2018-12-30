@@ -18,7 +18,7 @@ body {
     background-color: #aad5ff;
     position: absolute;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -32,21 +32,25 @@ body {
 }
 
 .back {
-    margin: 0 calc(50% - 50vw);
     height: 100vh;
     width: auto;
     transform: scale(1, -1);
 }
 
 #intro > .back:nth-child(1) {
+    top: -30vh;
     fill: #0080ff;
 }
 
 #intro > .back:nth-child(2) {
+    top: -40vh;
+    right: -25vh;
     fill: #006ad5;
 }
 
 #intro > .back:nth-child(3) {
+    top: -50vh;
+    right: -40vh;
     fill: #0055aa;
 }
 
