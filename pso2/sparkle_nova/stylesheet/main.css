@@ -33,7 +33,7 @@ body {
 
 .back {
     height: 100vh;
-    width: auto;
+    width: 100vw;
     transform: scale(1, -1);
 }
 
@@ -44,13 +44,11 @@ body {
 
 #intro > .back:nth-child(2) {
     top: -40vh;
-    right: -25vh;
     fill: #006ad5;
 }
 
 #intro > .back:nth-child(3) {
     top: -50vh;
-    right: -40vh;
     fill: #0055aa;
 }
 

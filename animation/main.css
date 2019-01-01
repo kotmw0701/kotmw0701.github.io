@@ -7,6 +7,10 @@ html, body, main {
     overflow: hidden;
 }
 
+main {
+    animation: mainback 2s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
+}
+
 footer {
     position: fixed;
     width: 100%;
@@ -256,6 +260,11 @@ footer {
 
 @keyframes backcolor {
     0% { background-color: #888; }
+    100% { background-color: black; }
+}
+
+@keyframes mainback {
+    60% { background-color: white; }
     100% { background-color: black; }
 }
 
