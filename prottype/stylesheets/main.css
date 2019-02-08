@@ -1,0 +1,45 @@
+
+html {
+	font-family: "M PLUS Rounded 1c";
+}
+
+/* header */
+
+header {
+	background-color: lightgreen;
+	display: flex;
+	height: 90px;
+	padding-left: 1em;
+}
+
+header h2 {
+	padding-left: 1em;
+}
+
+/* nav */
+
+nav {
+	display: flex;
+	margin-left: auto;
+	font-size: 1.3em;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0 30px;
+	line-height: 85px;
+	border-bottom: solid transparent 5px;
+	transition: border-bottom .5s ease;
+}
+
+nav a:hover {
+	border-bottom: solid gray 5px;
+}
+
+/* main */
+
+/* footer */
+
+/* font / animation */

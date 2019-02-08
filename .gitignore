@@ -1,5 +1,6 @@
 .vscode/*
 
 *.db
+*.php
 
 qman.html
