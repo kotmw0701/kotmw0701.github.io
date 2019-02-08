@@ -1,35 +1,44 @@
 
 html {
-	font-family: "M PLUS Rounded 1c";
+	font-family: 'Titillium Web';
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Titillium Web', 'M PLUS Rounded 1c';
 }
 
 /* header */
 
 header {
-	background-color: lightgreen;
+	background-color: lightskyblue;
 	display: flex;
-	height: 90px;
 	padding-left: 1em;
 }
 
 header h2 {
+	font-size: 1.2em;
 	padding-left: 1em;
 }
 
-/* nav */
+header a {
+	color: black;
+	text-decoration: none;
+}
 
+/* nav */
 nav {
 	display: flex;
-	margin-left: auto;
+	margin: 0 1em 0 auto;
 	font-size: 1.3em;
 }
 
 nav a {
 	display: block;
-	text-decoration: none;
 	font-weight: bold;
-	padding: 0 30px;
-	line-height: 85px;
+	text-align: center;
+	min-width: 110px;
+	line-height: 45px;
+	margin: 0 0.5em;
 	border-bottom: solid transparent 5px;
 	transition: border-bottom .5s ease;
 }
@@ -40,6 +49,39 @@ nav a:hover {
 
 /* main */
 
+main {
+	background-color: lightsalmon;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.profile {
+	width: 40%;
+	border-bottom: solid gray 1px;
+}
+
+.profile dt {
+	float: left;
+	width: 50%;
+}
+
+.profile dd {
+	padding-left: 50%;
+}
+
+.profile dt + dd {
+	border-top: solid gray 1px;
+}
+
 /* footer */
+
+footer {
+	background-color: lightgoldenrodyellow;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.2em;
+}
 
 /* font / animation */
