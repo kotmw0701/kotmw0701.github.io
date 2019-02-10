@@ -25,13 +25,15 @@ body {
 header {
 	background-color: black;
 	color: white;
-	display: flex;
-	padding-left: 1em;
 }
 
-header h2 {
-	font-size: 1.2em;
-	padding-left: 1em;
+
+header .container{
+	flex: none;
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
 }
 
 header a {
@@ -39,29 +41,44 @@ header a {
 	text-decoration: none;
 }
 
-/* nav */
-nav {
-	display: flex;
-	margin: 0 1em 0 auto;
-	font-size: 1.3em;
+.title a {
+	display: inline-block;
+	line-height: 55px;
 }
 
-nav p, a{
+/* nav */
+
+nav {
+	margin-left: auto;
+}
+
+nav ul{
+	display: flex;
+	font-size: 1.3em;
+	list-style: none;
+}
+
+nav a, nav p {
 	display: block;
 	font-weight: bold;
 	text-align: center;
 	min-width: 110px;
-	line-height: 45px;
+	min-height: 50px;
+	line-height: 50px;
 	margin: 0 0.5em;
 }
 
 nav a {
 	border-bottom: solid transparent 5px;
-	transition: border-bottom .5s ease;
+	transition: border-bottom .3s linear;
 }
 
 nav p, nav a:hover {
 	border-bottom: solid white 5px;
+}
+
+#nav_toggle {
+	display: none;
 }
 
 /* main */
@@ -100,7 +117,7 @@ section {
 
 .profile dl {
 	margin: 1em 0;
-	width: 40%;
+	width: 50%;
 	border-bottom: solid gray 1px;
 }
 
@@ -128,3 +145,82 @@ footer {
 }
 
 /* font / animation */
+
+/* media query */
+
+@media screen and (max-width: 1100px) {
+	nav {
+		display: none;
+		position: absolute;
+		top: 55px;
+		width: 100%;
+		background: #006598;
+		left: 0;
+	}
+
+	nav ul {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+	nav li {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#nav_toggle {
+		display: block;
+		position: relative;
+		top: 6px;
+		z-index: 100;
+		margin-left: auto;
+	}
+	#nav_toggle div {
+		width: 40px;
+		height: 40px;
+		position: relative;
+	}
+	#nav_toggle span{
+		display: block;
+		height: 3px;
+		background: #fff;
+		position:absolute;
+		width: 100%;
+		left: 0;
+		-webkit-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;	
+	}
+	#nav_toggle span:nth-child(1){
+		top:0px;
+	}
+	#nav_toggle span:nth-child(2){
+		top:12px;
+	}
+	#nav_toggle span:nth-child(3){
+		top:24px;
+	}
+
+	.open #nav_toggle span:nth-child(1) {
+		top: 12px;
+	    -webkit-transform: rotate(135deg);
+		-moz-transform: rotate(135deg);
+		transform: rotate(135deg);
+	}
+	.open #nav_toggle span:nth-child(2) {
+		width: 0;
+		left: 50%;
+	}
+	.open #nav_toggle span:nth-child(3) {
+		top: 12px;
+		-webkit-transform: rotate(-135deg);
+		-moz-transform: rotate(-135deg);
+		transform: rotate(-135deg);
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.profile dl {
+		width: 100%;
+	}
+}
