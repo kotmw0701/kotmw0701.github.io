@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+	background-color: #eee;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -25,6 +26,7 @@ body {
 header {
 	background-color: black;
 	color: white;
+	box-shadow: 0 1px 5px 2px gray;
 }
 
 
@@ -91,8 +93,8 @@ main {
 }
 
 main h1 {
-	background: bisque;
-	font-size: 1.4em;
+	background: #bbb;
+	font-size: 1.8em;
 	color: #474747;
 	border-radius: 10px;
 	padding: 0 0 0 .5em;
@@ -100,12 +102,12 @@ main h1 {
 
 main h2 {
 	font-size: 1.2em;
-	border-bottom: solid orange 3px;
+	border-bottom: solid #aaa 3px;
 	line-height: 2em;
 }
 
 main .container {
-	background-color: antiquewhite;
+	background-color: white;
 	border-radius: 10px;
 	margin: 20px 0;
 }
@@ -115,10 +117,15 @@ section {
 	padding: 1em;
 }
 
+dl > div {
+	border-bottom: solid gray 1px;
+	padding: 5px;
+}
+
 .profile dl {
 	margin: 1em 0;
 	width: 50%;
-	border-bottom: solid gray 1px;
+	border-top: solid gray 1px;
 }
 
 .profile dt {
@@ -127,17 +134,15 @@ section {
 }
 
 .profile dd {
-	padding-left: 50%;
-}
-
-.profile dt + dd {
-	border-top: solid gray 1px;
+	margin-left: 50%;
+	padding-left: 5px;
+	border-left: solid gray 1px;
 }
 
 /* footer */
 
 footer {
-	background-color: lightgray;
+	background-color: #999;
 	text-align: center;
 	height: 60px;
 	line-height: 60px;
@@ -154,7 +159,7 @@ footer {
 		position: absolute;
 		top: 55px;
 		width: 100%;
-		background: #006598;
+		background: #444;
 		left: 0;
 	}
 
@@ -166,6 +171,10 @@ footer {
 	nav li {
 		margin: 0 auto;
 		text-align: center;
+	}
+
+	nav p, nav a, nav a:hover {
+		border: none;
 	}
 
 	#nav_toggle {
