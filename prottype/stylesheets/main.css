@@ -60,13 +60,7 @@ nav ul{
 	list-style: none;
 }
 
-nav li {
-	border-left: solid #151515;
-}
 
-nav li:last-child {
-	border-right: solid #151515;
-}
 
 nav a, nav p {
 	display: block;
@@ -121,7 +115,6 @@ main .container {
 	margin: 20px 0;
 }
 
-/* メモ: marginが適用されないから一時的にpaddingで枠取りします */
 section {
 	margin: 1em;
 }
@@ -169,6 +162,16 @@ footer {
 
 /* media query */
 
+@media screen and (min-width: 1100px) {
+	nav li {
+		border-left: solid #151515;
+	}
+	
+	nav li:last-child {
+		border-right: solid #151515;
+	}
+}
+
 @media screen and (max-width: 1100px) {
 	nav {
 		display: none;
@@ -184,6 +187,7 @@ footer {
 		margin: 0 auto;
 		width: 90%;
 	}
+
 	nav li {
 		margin: 0 auto;
 		text-align: center;
