@@ -1,17 +1,17 @@
 @charset 'utf-8';
 
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
-@import url(https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
 
 html, body{
 	height: 100%;
 	width: 100%;
-	font-family: 'Titillium Web', "游ゴシック体", "Yu Gothic", sans-serif;
+	font-family: 'Roboto mono', "游ゴシック体", "Yu Gothic", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Titillium Web', 'M PLUS Rounded 1c';
+	font-family: 'Roboto mono', 'M PLUS Rounded 1c', monospace;
 }
 
 body {
@@ -60,6 +60,14 @@ nav ul{
 	list-style: none;
 }
 
+nav li {
+	border-left: solid #151515;
+}
+
+nav li:last-child {
+	border-right: solid #151515;
+}
+
 nav a, nav p {
 	display: block;
 	font-weight: bold;
@@ -89,15 +97,15 @@ main {
 	flex: 1;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1300px;
+	max-width: 1000px;
 }
 
 main h1 {
 	background: #bbb;
 	font-size: 1.8em;
 	color: #474747;
-	border-radius: 10px;
-	padding: 0 0 0 .5em;
+	border-radius: 10px 10px 0 0;
+	padding: .1em 0 .1em .5em;
 }
 
 main h2 {
@@ -109,12 +117,13 @@ main h2 {
 main .container {
 	background-color: white;
 	border-radius: 10px;
+	border-bottom: solid transparent 1px;
 	margin: 20px 0;
 }
 
 /* メモ: marginが適用されないから一時的にpaddingで枠取りします */
 section {
-	padding: 1em;
+	margin: 1em;
 }
 
 dl > div {
@@ -122,8 +131,11 @@ dl > div {
 	padding: 5px;
 }
 
-.profile dl {
+section .inner {
 	margin: 1em 0;
+}
+
+.profile dl {
 	width: 50%;
 	border-top: solid gray 1px;
 }
@@ -135,8 +147,12 @@ dl > div {
 
 .profile dd {
 	margin-left: 50%;
-	padding-left: 5px;
+	padding-left: 0.4em;
 	border-left: solid gray 1px;
+}
+
+.twitter div {
+	text-align: center;
 }
 
 /* footer */
