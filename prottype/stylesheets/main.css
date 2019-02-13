@@ -144,10 +144,55 @@ section .inner {
 	border-left: solid gray 1px;
 }
 
-.twitter div {
+.tweets div {
 	text-align: center;
 }
 
+.accounts p {
+	font-size: 0.8em;
+}
+
+.accounts .inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.snslogo {
+	margin: 0 1em;;
+}
+
+.snslogo a, .snslogo span {
+	background-color: lightgray;
+	color: black;
+	text-decoration: none;
+	font-size: 3em;
+	border-radius: 50%;
+	width: 5.5rem;
+	height: 5.5rem;
+	line-height: 5.5rem;
+	text-align: center;
+}
+
+.snslogo a {
+	box-shadow: 0 0 2px gray;
+}
+
+.snslogo p {
+	text-align: center;
+}
+
+.twitter:hover {
+	background-color: 
+}
+
+.github:hover {
+
+}
+
+.youtube:hover {
+
+}
 /* footer */
 
 footer {
@@ -158,7 +203,7 @@ footer {
 	font-size: 1.2em;
 }
 
-/* font / animation */
+/* animation */
 
 /* media query */
 
