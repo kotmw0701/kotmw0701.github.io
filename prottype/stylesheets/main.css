@@ -24,6 +24,7 @@ body {
 /* header */
 
 header {
+	z-index: 10;
 	background-color: black;
 	color: white;
 	box-shadow: 0 1px 5px 2px gray;
@@ -194,7 +195,7 @@ section .inner {
 	height: 100%;
 	transform-origin: right top;
 	transform: skewX(-45deg) scale(0, 1);
-	transition: transform .3s;
+	transition: transform .5s;
 }
 
 .snslogo a:hover::before {
