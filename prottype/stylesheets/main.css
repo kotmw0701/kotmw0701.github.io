@@ -24,6 +24,7 @@ body {
 /* header */
 
 header {
+	position: relative;
 	z-index: 10;
 	background-color: black;
 	color: white;
@@ -116,7 +117,7 @@ main .container {
 	margin: 20px 0;
 }
 
-section {
+article {
 	margin: 1em;
 }
 
@@ -125,7 +126,7 @@ dl > div {
 	padding: 5px;
 }
 
-section .inner {
+article .inner {
 	margin: 1em 0;
 }
 
@@ -162,11 +163,11 @@ section .inner {
 	justify-content: center;
 }
 
-.snslogo {
+.servicelogo {
 	margin: 0 1em;
 }
 
-.snslogo a, .snslogo span {
+.servicelogo a, .servicelogo span {
 	display: block;
 	background-color: lightgray;
 	color: black;
@@ -179,14 +180,14 @@ section .inner {
 	text-align: center;
 }
 
-.snslogo a {
+.servicelogo a {
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0 0 2px gray;
 	transition: color .3s;
 }
 
-.snslogo a::before {
+.servicelogo a::before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -198,17 +199,16 @@ section .inner {
 	transition: transform .5s;
 }
 
-.snslogo a:hover::before {
+.servicelogo a:hover::before {
 	transform-origin: left top;
 	transform: skewX(-45deg) scale(1, 1);
 }
 
-.snslogo div {
+.servicelogo div {
 	position: relative;
 	z-index: auto;
 }
 
-/* z-indexがあるせいで上手くいかない */
 .twitter a::before {
 	background-color: #1DA1F2;
 }
@@ -232,6 +232,26 @@ section .inner {
 .youtube a:hover {
 	color: red;
 }
+
+.steam a::before {
+	background: #111d2e;
+	background: -moz-linear-gradient(top, #111d2e 0%, #051839 21%, #0a1b48 41%, #132e62 58%, #144b7e 73%, #136497 87%, #1387b8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #111d2e 0%, #051839 21%, #0a1b48 41%, #132e62 58%, #144b7e 73%, #136497 87%, #1387b8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #111d2e 0%, #051839 21%, #0a1b48 41%, #132e62 58%, #144b7e 73%, #136497 87%, #1387b8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.steam a:hover {
+	color: white;
+}
+
+.amazon a::before {
+	background-color: #131A22;
+}
+
+.amazon a:hover {
+	color: #FF9900;
+}
+
 /* footer */
 
 footer {
@@ -257,12 +277,14 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
+
 	nav {
 		display: none;
 		position: absolute;
 		top: 55px;
 		width: 100%;
 		background: #444;
+		box-shadow: 0 3px 5px -1px gray;
 		left: 0;
 	}
 
