@@ -184,7 +184,15 @@ article .inner {
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0 0 2px gray;
-	transition: color .3s;
+	transition: color .3s ease;
+}
+
+.servicelogo a > div {
+	transition: transform .3s ease;
+}
+
+.servicelogo a:hover > div {
+	transform: scale(1.5);
 }
 
 .servicelogo a::before {

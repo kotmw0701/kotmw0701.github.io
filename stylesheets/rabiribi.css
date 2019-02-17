@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.charalist {
+	list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	text-align: center;
+}
+
+.charalist > * {
+	box-shadow: 2px 2px 5px gray;
+	margin-bottom: 1em;
+}
+
+span {
+    background: no-repeat center bottom;
+    display: block;
+	width: 180px;
+	height: 210px;
+}
+
+.cocoa {
+    background-image: url("../images/cocoa.gif");
+}
+
+.cocoa:hover {
+	background-image: url("../images/cocoa_run.gif");
+}
+
+.irisu {
+	background-image: url("../images/iris.gif");
+}
+
+.irisu:hover {
+	background-image: url("../images/iris_run.gif");
+}
+
+.vanilla {
+	background-image: url("../images/vanilla.gif");
+}
+
+.vanilla:hover {
+	/*まだ作ってないヨ*/
+}
+
+.chocolate {
+	background-image: url("../images/chocolate.gif");
+}
+
+.chocolate:hover {
+	/*まだ作ってないヨ*/
+}
+
+.cicini {
+	background-image: url("../images/cicini.gif");
+}
+
+.cicini:hover {
+	/*まだ作ってないヨ*/
+}
+
+.pandora {
+	/*まだ作ってないヨ*/
+}
+
+.pandora:hover {
+	/*まだ作ってないヨ*/
+}
+
+.lilith {
+	/*まだ作ってないヨ*/
+}
+
+.lilith:hover {
+	/*まだ作ってないヨ*/
+}
