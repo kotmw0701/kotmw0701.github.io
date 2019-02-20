@@ -15,7 +15,14 @@ gulp.task('pug', () => {
             // 必要なファイルパス部分のみ取得
             var fileName = filePath.split('_pug')[1].replace('.pug', '.html');
             // jsonファイルから対象ページの情報を取得して返す
-            return metaData[fileName];
+            var global = metaData["global"];//全体の共通データを取得
+            var meta = metaData[fileName];//変更点のデータを取得
+
+            Object.keys(meta).forEach(function(key) {
+                global[key] = this[key];
+            }, meta);
+
+            return global;
         }))
         .pipe(pug({
             pretty: true
@@ -24,5 +31,5 @@ gulp.task('pug', () => {
             indent_size: 1,
             indent_char: '\t'
         }))
-        .pipe(gulp.dest('./html/'));
+        .pipe(gulp.dest('./output/'));
 });

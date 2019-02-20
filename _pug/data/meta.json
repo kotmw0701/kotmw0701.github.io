@@ -1,7 +1,17 @@
 {
+    "global": {
+        "site_name": "ことむにの物置",
+        "title": "ことむにの物置",
+        "type": "website",
+        "url": "https://kotmw0701.github.io",
+        "description": "ことむにのサイトです",
+        "image": "https://kotmw0701.github.io/images/pso20181212_223415_030.png",
+        "twitter_card": "summary",
+        "twitter_site": "@rabikotmw"
+
+    },
     "/index.html": {
         "title": "Home",
         "description": "自己紹介ページ。自分が作ったものや，自分についての事をちまちまと書いてます。"
-
     }
 }
