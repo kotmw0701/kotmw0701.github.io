@@ -15,10 +15,19 @@ head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#")
 	meta(name="twitter:image" content=image)
 	meta(name="twitter:title" content=site_name+" | "+title)
 	meta(name="twitter:description" content=description)
-	link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
-	link(rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css")
-	link(rel="stylesheet" href="stylesheets/main.css")
+	if use_fontawesome
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+	if styles_usetemp
+		link(rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css")
+		link(rel="stylesheet" href=root + "stylesheets/main.css")
 	// このページのみのStyleSheet
+	if styles.length != 0
+		each style in styles
+			link(href=root +"stylesheet/"+ style, rel="stylesheet")
 	//
-	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-	script(src="script/main.js")
+	if scripts_usetemp
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src=root + "script/main.js")
+	if scripts.length != 0
+		each script in scripts
+			script(src=root +"script"+ script)

@@ -1,27 +1,58 @@
 {
     "global": {
         "site_name": "ことむにの物置",
-        "title": "ことむにの物置",
+		"category": "ことむにの物置",
+		"title": "ことむにの物置",
         "type": "website",
         "url": "https://kotmw0701.github.io",
         "description": "ことむにのサイトです",
         "image": "https://kotmw0701.github.io/images/pso20181212_223415_030.png",
         "twitter_card": "summary",
 		"twitter_site": "@rabikotmw",
-		"styles": [
-			""
-		]
+		"use_fontawesome": true,
+		"root": "",
+		"styles_usetemp": true,
+		"styles": [],
+		"scripts_usetemp": true,
+		"scripts": []
     },
     "/index.html": {
-        "title": "Home",
-        "description": "自己紹介ページ。自分が作ったものや，自分についての事をちまちまと書いてます。"
+		"category": "Home",
+		"title": "自己紹介",
+		"description": "自己紹介ページ。自分が作ったものや，自分についての事をちまちまと書いてます。"
 	},
 	"/activity.html": {
-		"title": "Activity",
-		"description": "自分の活動内容とか"
+		"category": "Activity",
+		"title": "アクティビティ",
+		"description": "自分の活動内容とか，お出かけ先の感想(？)"
 	},
 	"/accounts.html": {
-		"title": "Accounts",
+		"category": "Accounts",
+		"title": "アカウント",
 		"description": "自分のアカウント一覧。SNS等" 
+	},
+	"/products/index.html": {
+		"category": "Products",
+		"title": "制作物",
+		"description": "自分が今まで作ったものの紹介ページ。"
+	},
+	"/products/scp_animation.html": {
+		"title": "SCP CSS Animation",
+		"description": "CSS Animationの練習として制作したページです，まだ途中なので不定期ですがちまちまと更新する予定です。",
+		"image": "https://kotmw0701.github.io/images/scp_animation.png",
+		"twitter_card": "summary_large_image",
+		"use_fontawesome": false,
+		"styles_usetemp": false,
+		"styles": [
+			"scpmain.css",
+			"scplogo.css"
+		]
+	},
+	"/products/rabiribi_pixelarts.html": {
+		"title": "Rabi-Ribi ドット絵Gif",
+		"description": "Rabi-Ribiはいいぞ，Rabi-Ribiはいいぞ，Rabi-Ribiはいいぞ，SteamやPS4版があるから買おう！　このページはキャラのドット絵のトレースをまとめてるだけのページです",
+		"styles" :[
+			"rabiribi.css"
+		]
 	}
 }
