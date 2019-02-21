@@ -46,7 +46,8 @@
 		"styles": [
 			"scpmain.css",
 			"scplogo.css"
-		]
+		],
+		"scripts_usetemp": false
 	},
 	"/products/rabiribi_pixelarts.html": {
 		"title": "Rabi-Ribi ドット絵Gif",

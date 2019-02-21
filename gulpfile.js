@@ -22,7 +22,7 @@ gulp.task('pug', () => {
 			let global = metaData["global"];//全体の共通データを取得
 			let meta = metaData[fileName];//変更点のデータを取得
 
-			//css/jsのパスを指定するため
+			//css,jsのパスを指定するため
 			for (let i = 0; i < fileName.slice(1).split("/").length-1; i++) {
 				global["root"] += "../";
 			}
@@ -33,7 +33,7 @@ gulp.task('pug', () => {
 			// console.log(meta);
             return global;
         }))
-        .pipe(pug({ basedir: '_pug' }))
+        .pipe(pug())
         .pipe(prettyHtml({
             indent_size: 1,
             indent_char: '\t'

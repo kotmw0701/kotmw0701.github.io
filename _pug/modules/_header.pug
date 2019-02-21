@@ -8,18 +8,18 @@
 	nav
 		ul
 			li
-				if title.toLowerCase() == "home"
+				if category.toLowerCase() == "home"
 					p Home
 				else 
 					a(href="index.html") Home
 			li: a(href="products/") Products
 			li
-				if title.toLowerCase() == "activity"
+				if category.toLowerCase() == "activity"
 					p Activity
 				else
 					a(href="activity.html") Activity
 			li
-				if title.toLowerCase() == "accounts"
+				if category.toLowerCase() == "accounts"
 					p Accounts
 				else
 					a(href="accounts.html") Accounts
