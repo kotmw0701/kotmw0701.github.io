@@ -4,8 +4,6 @@
 *.php
 *.iml
 
-qman.html
-
 .idea/
 node_modules/
 package-lock.json

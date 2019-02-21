@@ -1,0 +1,19 @@
+.profile dl {
+	width: 50%;
+	border-top: solid gray 1px;
+}
+
+.profile dt {
+	float: left;
+	width: 50%;
+}
+
+.profile dd {
+	margin-left: 50%;
+	padding-left: 0.4em;
+	border-left: solid gray 1px;
+}
+
+.tweets div {
+	text-align: center;
+}

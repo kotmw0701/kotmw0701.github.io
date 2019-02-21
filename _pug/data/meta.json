@@ -19,7 +19,10 @@
     "/index.html": {
 		"category": "Home",
 		"title": "自己紹介",
-		"description": "自己紹介ページ。自分が作ったものや，自分についての事をちまちまと書いてます。"
+		"description": "自己紹介ページ。自分が作ったものや，自分についての事をちまちまと書いてます。",
+		"styles": [
+			"home.css"
+		]
 	},
 	"/activity.html": {
 		"category": "Activity",
@@ -29,7 +32,10 @@
 	"/accounts.html": {
 		"category": "Accounts",
 		"title": "アカウント",
-		"description": "自分のアカウント一覧。SNS等" 
+		"description": "自分のアカウント一覧。SNS等",
+		"styles": [
+			"accounts.css"
+		]
 	},
 	"/products/index.html": {
 		"category": "Products",
