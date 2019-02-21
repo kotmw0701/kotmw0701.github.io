@@ -1,0 +1,16 @@
+doctype html
+html
+	include _head
+	body
+		header
+			include _header
+		main
+			.container
+				h1 #{title}
+				block content
+					article
+						h2 テンプレート
+						.inner
+							p 執筆中...
+		footer
+			include _footer

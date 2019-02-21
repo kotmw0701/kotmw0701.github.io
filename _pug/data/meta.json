@@ -7,11 +7,21 @@
         "description": "ことむにのサイトです",
         "image": "https://kotmw0701.github.io/images/pso20181212_223415_030.png",
         "twitter_card": "summary",
-        "twitter_site": "@rabikotmw"
-
+		"twitter_site": "@rabikotmw",
+		"styles": [
+			""
+		]
     },
     "/index.html": {
         "title": "Home",
         "description": "自己紹介ページ。自分が作ったものや，自分についての事をちまちまと書いてます。"
-    }
+	},
+	"/activity.html": {
+		"title": "Activity",
+		"description": "自分の活動内容とか"
+	},
+	"/accounts.html": {
+		"title": "Accounts",
+		"description": "自分のアカウント一覧。SNS等" 
+	}
 }

@@ -24,9 +24,7 @@ gulp.task('pug', () => {
 
             return global;
         }))
-        .pipe(pug({
-            pretty: true
-        }))
+        .pipe(pug())
         .pipe(prettyHtml({
             indent_size: 1,
             indent_char: '\t'
