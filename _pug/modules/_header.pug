@@ -1,5 +1,5 @@
 .container
-	h1.title: a(href="index.html") ことむにの物置
+	h1.site_name: a(href="index.html") ことむにの物置
 	#nav_toggle
 		div
 			span
@@ -11,16 +11,16 @@
 				if category.toLowerCase() == "home"
 					p Home
 				else 
-					a(href="index.html") Home
-			li: a(href="products/") Products
+					a(href= root +"index.html", rel="prefetch") Home
+			li: a(href= root +"products/", rel="prefetch") Products
 			li
 				if category.toLowerCase() == "activity"
 					p Activity
 				else
-					a(href="activity.html") Activity
+					a(href= root +"activity.html", rel="prefetch") Activity
 			li
 				if category.toLowerCase() == "accounts"
 					p Accounts
 				else
-					a(href="accounts.html") Accounts
+					a(href= root +"accounts.html", rel="prefetch") Accounts
 			li: a(href="#") Contact

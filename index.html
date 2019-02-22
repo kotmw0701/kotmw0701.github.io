@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 	<link rel="stylesheet" href="stylesheets/main.css"><!-- このページのみのStyleSheet-->
+	<link href="stylesheets/home.css" rel="stylesheet">
 	<!---->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="script/main.js"></script>
@@ -29,7 +30,7 @@
 <body>
 	<header>
 		<div class="container">
-			<h1 class="title"><a href="index.html">ことむにの物置</a></h1>
+			<h1 class="site_name"><a href="index.html">ことむにの物置</a></h1>
 			<div id="nav_toggle">
 				<div><span></span><span></span><span></span></div>
 			</div>
@@ -38,41 +39,41 @@
 					<li>
 						<p>Home</p>
 					</li>
-					<li><a href="products/">Products</a></li>
-					<li><a href="activity.html">Activity</a></li>
-					<li><a href="accounts.html">Accounts</a></li>
+					<li><a href="products/" rel="prefetch">Products</a></li>
+					<li><a href="activity.html" rel="prefetch">Activity</a></li>
+					<li><a href="accounts.html" rel="prefetch">Accounts</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<main>
+	<main class="root">
 		<div class="container">
-			<h1>Home</h1>
+			<h1 class="page_title">Home</h1>
 			<article class="profile">
-				<h2>プロフィール</h2>
-				<div class="inner">
-					<dl>
-						<div><dt>名前(HN)</dt>
+				<h2 class="subtitle">プロフィール</h2>
+				<div class="page_inner">
+					<dl class="profile_content">
+						<div class="profile_row"><dt>名前(HN)</dt>
 							<dd>ことむー</dd>
 						</div>
-						<div><dt>名前(呼び名)</dt>
+						<div class="profile_row"><dt>名前(呼び名)</dt>
 							<dd>ことさん</dd>
 							<dd>ことむに</dd>
 							<dd>むにむに</dd>
 							<dd>むにえる</dd>
 						</div>
-						<div><dt>誕生日</dt>
+						<div class="profile_row"><dt>誕生日</dt>
 							<dd>７月１日</dd>
 						</div>
-						<div><dt>趣味</dt>
+						<div class="profile_row"><dt>趣味</dt>
 							<dd>音ゲー</dd>
 							<dd>プログラミング</dd>
 						</div>
-						<div><dt>好物</dt>
+						<div class="profile_row"><dt>好物</dt>
 							<dd>ドライパイン</dd>
 						</div>
-						<div><dt>好きな言語</dt>
+						<div class="profile_row"><dt>好きな言語</dt>
 							<dd>Java</dd>
 							<dd>C#</dd>
 							<dd>TypeScript (勉強中)</dd>
@@ -80,21 +81,21 @@
 						</div>
 					</dl>
 				</div>
-				<h2>ひとこと</h2>
-				<div class="inner">
+				<h2 class="subtitle">ひとこと</h2>
+				<div class="page_inner">
 					<p>こんにちは，ことむーです。<br>ぷよぐやみんぐしたり音ゲーしたりしてる鳥です。<br>大体Twitterに居るので気軽に声掛けてください，集中してるときは反応無かったりするのでちょっと待ってもらえればその日のうちに反応はします。<br>ケモいの好きなのでそういうの投げてくれれば基本飛びつきます。<br>人によって好き嫌い激しい面倒な性格してますがよろしくお願いします。</p>
 				</div>
 			</article>
 			<article class="tweets">
 				<h2>つぶやき</h2>
-				<div class="inner"><a class="twitter-timeline" href="https://twitter.com/rabikotmw?ref_src=twsrc%5Etfw" data-width="500" data-height="500" data-chrome="noheader noborders nofooter">Tweets by rabikotmw</a>
+				<div class="page_inner"><a class="twitter-timeline" href="https://twitter.com/rabikotmw?ref_src=twsrc%5Etfw" data-width="500" data-height="500" data-chrome="noheader noborders nofooter">Tweets by rabikotmw</a>
 					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 			</article>
 		</div>
 	</main>
 	<footer>
-		<div class="inner">&copy; 2019 kotmw0701</div>
+		<div class="page_inner">&copy; 2019 kotmw0701</div>
 	</footer>
 </body>
 

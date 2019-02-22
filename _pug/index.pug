@@ -2,36 +2,36 @@ extends modules/_layout.pug
 
 block content
 	article.profile
-		h2 プロフィール
-		.inner 
-			dl
-				div
+		h2.subtitle プロフィール
+		.page_inner 
+			dl.profile_content
+				.profile_row
 					dt 名前(HN)
 					dd ことむー
-				div
+				.profile_row
 					dt 名前(呼び名)
 					dd ことさん
 					dd ことむに
 					dd むにむに
 					dd むにえる
-				div
+				.profile_row
 					dt 誕生日
 					dd ７月１日
-				div
+				.profile_row
 					dt 趣味
 					dd 音ゲー
 					dd プログラミング
-				div
+				.profile_row
 					dt 好物
 					dd ドライパイン
-				div
+				.profile_row
 					dt 好きな言語
 					dd Java
 					dd C#
 					dd TypeScript (勉強中)
 					dd Pug (勉強中)
-		h2 ひとこと
-		.inner
+		h2.subtitle ひとこと
+		.page_inner
 			p こんにちは，ことむーです。
 				br
 				| ぷよぐやみんぐしたり音ゲーしたりしてる鳥です。
@@ -43,7 +43,7 @@ block content
 				| 人によって好き嫌い激しい面倒な性格してますがよろしくお願いします。
 	article.tweets
 		h2 つぶやき
-		.inner
+		.page_inner
 			a.twitter-timeline(href="https://twitter.com/rabikotmw?ref_src=twsrc%5Etfw" data-width="500" data-height="500" data-chrome="noheader noborders nofooter")
 				| Tweets by rabikotmw
 			script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")

@@ -4,13 +4,13 @@ html
 	body
 		header
 			include _header
-		main
+		main.root
 			.container
-				h1 #{category}
+				h1.page_title #{category}
 				block content
 					article
 						h2 #{title}
-						.inner
+						.page_inner
 							p 執筆中...
 		footer
 			include _footer

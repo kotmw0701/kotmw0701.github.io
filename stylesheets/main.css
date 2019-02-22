@@ -45,7 +45,7 @@ header a {
 	text-decoration: none;
 }
 
-.title a {
+.site_name a {
 	display: inline-block;
 	line-height: 55px;
 }
@@ -89,14 +89,21 @@ nav p, nav a:hover {
 
 /* main */
 
-main {
+.root {
 	flex: 1;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1000px;
 }
 
-main h1 {
+.root .container {
+	background-color: white;
+	border-radius: 10px;
+	border-bottom: solid transparent 1px;
+	margin: 20px 0;
+}
+
+.page_title {
 	background: #bbb;
 	font-size: 1.8em;
 	color: #474747;
@@ -104,29 +111,17 @@ main h1 {
 	padding: .1em 0 .1em .5em;
 }
 
-main h2 {
+h2 {
 	font-size: 1.2em;
 	border-bottom: solid #aaa 3px;
 	line-height: 2em;
-}
-
-main .container {
-	background-color: white;
-	border-radius: 10px;
-	border-bottom: solid transparent 1px;
-	margin: 20px 0;
 }
 
 article {
 	margin: 1em;
 }
 
-dl > div {
-	border-bottom: solid gray 1px;
-	padding: 5px;
-}
-
-article .inner {
+.page_inner {
 	margin: 1em 0;
 }
 
@@ -229,12 +224,5 @@ footer {
 		-webkit-transform: rotate(-135deg);
 		-moz-transform: rotate(-135deg);
 		transform: rotate(-135deg);
-	}
-}
-
-@media screen and (max-width: 500px) {
-	
-	.profile dl {
-		width: 100%;
 	}
 }

@@ -14,6 +14,18 @@
 	border-left: solid gray 1px;
 }
 
+.profile_row {
+	border-bottom: solid gray 1px;
+	padding: 5px;
+}
+
 .tweets div {
 	text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+	
+	.profile dl {
+		width: 100%;
+	}
 }

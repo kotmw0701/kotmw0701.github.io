@@ -21,13 +21,13 @@ head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#")
 		link(rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css")
 		link(rel="stylesheet" href=root + "stylesheets/main.css")
 	// このページのみのStyleSheet
-	if styles.length != 0
+	if styles.length > 0
 		each style in styles
-			link(href=root +"stylesheet/"+ style, rel="stylesheet")
+			link(href=root +"stylesheets/"+ style, rel="stylesheet")
 	//
 	if scripts_usetemp
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 		script(src=root + "script/main.js")
-	if scripts.length != 0
+	if scripts.length > 0
 		each script in scripts
 			script(src=root +"script"+ script)

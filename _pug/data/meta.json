@@ -40,7 +40,10 @@
 	"/products/index.html": {
 		"category": "Products",
 		"title": "制作物",
-		"description": "自分が今まで作ったものの紹介ページ。"
+		"description": "自分が今まで作ったものの紹介ページ。",
+		"styles": [
+			"products.css"
+		]
 	},
 	"/products/scp_animation.html": {
 		"title": "SCP CSS Animation",
