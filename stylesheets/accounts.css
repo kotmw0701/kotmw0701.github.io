@@ -107,3 +107,8 @@
 .amazon a:hover {
 	color: #FF9900;
 }
+
+.kyash_qr {
+	width: 200px;
+	height: 200px;
+}

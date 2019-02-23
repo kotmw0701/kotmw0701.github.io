@@ -133,6 +133,11 @@ footer {
 	height: 60px;
 }
 
+footer .container {
+	font-size: 1.2em;
+	line-height: 60px;
+}
+
 /* animation */
 
 /* media query */
