@@ -1,15 +1,21 @@
-.product_link {
+.page_inner {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inner {
+    padding-top: 10px;
+    background-color: #eee;
+    min-height: 350px;
 }
 
 .content {
-    display: inline-block;
+    display: block;
     color: black;
     text-decoration: none;
-}
-
-.content:not(.top) {
-    margin-top: 1em;
+    margin: .75em 2em;
+    width: 300px;
 }
 
 /* transformの後にﾋﾟｸｯって動くことがあるのでそれの対処 */
@@ -20,20 +26,33 @@
 }
 
 .image_wrap {
+    margin: 0 10px;
     flex: none;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    border-radius: 10px;
 }
 
-.inner {
-    margin-left: 1em;
+.title {
+    font-size: 1em;
+    margin: 10px;
+}
+
+.description {
+    font-size: .9em;
+    margin: 0 1em;
 }
 
 img {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 169px;
     object-fit: cover;
     transition: transform .5s;
+}
+
+
+@media screen and (max-width: 700px) {
+    .content {
+        width: 85%;
+    }
 }
