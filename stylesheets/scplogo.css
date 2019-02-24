@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.scp_foundation {
+    animation: logoHide 1s linear 7s 1 normal forwards;
+}
+
 .logo {
     /* background-color: #8888; */
     bottom: 20%;
@@ -57,5 +61,11 @@
     }
     100% {
         right: 60%;
+    }
+}
+
+@keyframes logoHide {
+    100% {
+        opacity: 0;
     }
 }
