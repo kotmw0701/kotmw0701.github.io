@@ -41,6 +41,8 @@
 
 .servicelogo a:hover > div {
 	transform: scale(1.25);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .servicelogo a::before {

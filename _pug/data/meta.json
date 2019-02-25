@@ -43,6 +43,9 @@
 		"description": "自分が今まで作ったものの紹介ページ。",
 		"styles": [
 			"products.css"
+		],
+		"scripts": [
+			"products.js"
 		]
 	},
 	"/products/scp_animation.html": {

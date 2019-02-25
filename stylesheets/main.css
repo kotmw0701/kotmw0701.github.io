@@ -101,6 +101,7 @@ nav p, nav a:hover {
 	border-radius: 10px;
 	border-bottom: solid transparent 1px;
 	margin: 20px 0;
+	animation: opening 1s ease-in 0s 1 reverse;
 }
 
 .page_title {
@@ -139,6 +140,14 @@ footer .container {
 }
 
 /* animation */
+
+@keyframes opening {
+	100% {
+		opacity: .8;
+		filter: blur(1px);
+		margin-top: -2px;
+	}
+}
 
 /* media query */
 
