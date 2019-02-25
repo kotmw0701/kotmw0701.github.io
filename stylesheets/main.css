@@ -112,7 +112,7 @@ nav p, nav a:hover {
 	padding: .1em 0 .1em .5em;
 }
 
-h2 {
+.subtitle {
 	font-size: 1.2em;
 	border-bottom: solid #aaa 3px;
 	line-height: 2em;
@@ -143,9 +143,7 @@ footer .container {
 
 @keyframes opening {
 	100% {
-		opacity: .8;
-		filter: blur(1px);
-		margin-top: -2px;
+		opacity: .25;
 	}
 }
 

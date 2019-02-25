@@ -5,12 +5,11 @@
 }
 
 .inner {
-    padding-top: 10px;
+    opacity: 0;
     background-color: #eee;
 }
 
 .content {
-    opacity: 0;
     display: block;
     color: black;
     text-decoration: none;
@@ -25,14 +24,8 @@
     backface-visibility: hidden;
 }
 
-.content::before, .content::after {
-    display: block;
-    content: '';
-    height: 4px;
-}
-
 .active {
-    animation: activation 1s linear .5s 1 forwards;
+    animation: activation .5s linear 0s 1 forwards;
 }
 
 .active::before {
@@ -41,7 +34,7 @@
     height: 4px;
     width: 0;
     background-color: gray;
-    animation: contentAnimBefore 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) .75s 1 forwards;
+    animation: contentAnimBefore 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) .5s 1 forwards;
 }
 
 .active::after {
@@ -51,11 +44,11 @@
     width: 0;
     margin-left: 100%;
     background-color: gray;
-    animation: contentAnimAfter 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) .75s 1 forwards;
+    animation: contentAnimAfter 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) .5s 1 forwards;
 }
 
 .image_wrap {
-    margin: 0 10px;
+    margin: 10px 10px 0;
     flex: none;
     overflow: hidden;
     border-radius: 10px;
@@ -63,12 +56,13 @@
 
 .title {
     font-size: 1em;
-    margin: 10px;
+    padding: 10px;
+    min-height: 23px;
 }
 
 .description {
     font-size: .9em;
-    margin: 0 1em;
+    padding: 0 1em;
     height: 150px;
 }
 
