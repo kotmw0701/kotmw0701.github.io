@@ -112,7 +112,7 @@ nav p, nav a:hover {
 	padding: .1em 0 .1em .5em;
 }
 
-.subtitle {
+.page_subtitle {
 	font-size: 1.2em;
 	border-bottom: solid #aaa 3px;
 	line-height: 2em;
@@ -123,6 +123,8 @@ article {
 }
 
 .page_inner {
+	position: relative;
+	z-index: 0;
 	margin: 1em 0;
 }
 
