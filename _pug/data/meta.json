@@ -70,5 +70,12 @@
 		"styles" :[
 			"rabiribi.css"
 		]
+	},
+	"/products/animation_test.html": {
+		"title": "CSS Animation試作ページ",
+		"description": "CSS Animationのアイディアメモ帳的な扱い",
+		"styles": [
+			"animtest.css"
+		]
 	}
 }
