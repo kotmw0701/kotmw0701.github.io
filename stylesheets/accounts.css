@@ -64,7 +64,7 @@
 
 .servicelogo div {
 	position: relative;
-	z-index: auto;
+	z-index: 0;
 }
 
 .twitter a::before {
