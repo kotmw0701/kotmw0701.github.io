@@ -11,12 +11,12 @@
 	margin: 4px 0 0;
 }
 
-.servicelogo {
+.content {
 	margin: 0 1em;
 	z-index: 0;
 }
 
-.service_link, .servicelogo span {
+.service_link, .content > span {
 	display: block;
 	background-color: lightgray;
 	color: black;
@@ -36,7 +36,8 @@
 	transition: color .3s ease;
 }
 
-.servicelogo .icon {
+.service_link .icon {
+	animation: iconAnim 1s cubic-bezier(0.645, 0.045, 0.355, 1.000) .25s reverse;
 	transition: transform .3s ease;
 }
 
@@ -67,50 +68,195 @@
 	position: relative;
 }
 
-.twitter a::before {
+.anim {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.anim::before, .anim::after {
+	content: '';
+	width: 50%;
+	height: 100%;
+}
+
+.anim::before {
+	transform-origin: center right;
+	animation: animBefore 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) .25s forwards;
+}
+
+.anim::after {
+	transform-origin: center left;
+	animation: 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) .25s forwards;
+}
+
+/* Twitter */
+
+.twitter::before {
 	background-color: #1DA1F2;
 }
 
-.twitter a:hover {
+.twitter:hover {
 	color: white;
 }
 
-.github a::before {
+.twitter .anim::before {
+	background-color: #1DA1F2;
+}
+
+.twitter .anim::after {
+	background-color: #1DA1F2;
+	animation-name: animAfter, twitterAnim;
+}
+
+/* GitHub */
+
+.github::before {
 	background-color: #444;
 }
 
-.github a:hover {
+.github:hover {
 	color: white;
 }
 
-.youtube a::before {
+.github .anim::before {
+	background-color: #444;
+}
+
+.github .anim::after {
+	background-color: #444;
+	animation-name: animAfter, githubAnim;
+}
+
+/* Youtube */
+
+.youtube .icon {
+	animation-name: youtubeIcon;
+}
+
+.youtube::before {
 	background-color: white	;
 }
 
-.youtube a:hover {
+.youtube:hover {
 	color: red;
 }
 
-.steam a::before {
+.youtube .anim::before {
+	background-color: white;
+}
+
+.youtube .anim::after {
+	background-color: white;
+	animation-name: animAfter, youtubeAnim
+}
+
+/* Steam */
+
+.steam::before {
 	background: #111d2e;
 	background: -moz-linear-gradient(top, #111d2e 0%, #051839 21%, #0a1b48 41%, #132e62 58%, #144b7e 73%, #136497 87%, #1387b8 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #111d2e 0%, #051839 21%, #0a1b48 41%, #132e62 58%, #144b7e 73%, #136497 87%, #1387b8 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #111d2e 0%, #051839 21%, #0a1b48 41%, #132e62 58%, #144b7e 73%, #136497 87%, #1387b8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.steam a:hover {
+.steam:hover {
 	color: white;
 }
 
-.amazon a::before {
+.steam .anim::before {
+	background-color: #1387b8;
+}
+
+.steam .anim::after {
+	background-color: #1387b8;
+	animation-name: animAfter, steamAnim;
+}
+
+/* Amazon */
+
+.amazon .icon {
+	animation-name: amazonIcon;
+}
+
+.amazon::before {
 	background-color: #131A22;
 }
 
-.amazon a:hover {
+.amazon:hover {
 	color: #FF9900;
+}
+
+.amazon .anim::before {
+	background-color: #131A22;
+}
+
+.amazon .anim::after {
+	background-color: #131A22;
+	animation-name: animAfter, amazonAnim;
 }
 
 .kyash_qr {
 	width: 200px;
 	height: 200px;
+}
+
+@keyframes animBefore{
+	50% { 
+		transform: rotate(0deg); 
+		opacity: 1; 
+	}
+	100% {
+		transform: rotate(180deg);
+		opacity: 0;
+	}
+}
+
+@keyframes animAfter {
+	50% {
+		transform: rotate(180deg);
+	}
+	99.99% { opacity: 1; }
+	50.01%, 100% {
+		transform: rotate(360deg);
+	}
+	100% { opacity: 0; }
+}
+
+@keyframes twitterAnim {
+	50% { background-color: #1DA1F2; }
+	50.01%, 100% { background-color: lightgray; }
+}
+
+@keyframes githubAnim {
+	50% { background-color: #444; }
+	50.01%, 100% { background-color: lightgray; }
+}
+
+@keyframes youtubeAnim {
+	50% { background-color: white; }
+	50.01%, 100% { background-color: lightgray; }
+}
+
+@keyframes steamAnim {
+	50% { background-color: #1387b8; }
+	50.01%, 100% { background-color: lightgray; }
+}
+
+@keyframes amazonAnim {
+	50% { background-color: #131A22; }
+	50.01%, 100% { background-color: lightgray; }
+}
+
+@keyframes iconAnim {
+	100% { color: white; }
+}
+
+@keyframes youtubeIcon {
+	100% { color: red; }
+}
+
+@keyframes amazonIcon {
+	100% { color: #FF9900; }
 }
