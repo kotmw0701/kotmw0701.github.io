@@ -9,9 +9,10 @@
 
 .servicelogo {
 	margin: 0 1em;
+	z-index: 0;
 }
 
-.servicelogo a, .servicelogo span {
+.service_link, .servicelogo span {
 	display: block;
 	background-color: lightgray;
 	color: black;
@@ -24,24 +25,24 @@
 	text-align: center;
 }
 
-.servicelogo a {
+.service_link {
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0 0 2px gray;
 	transition: color .3s ease;
 }
 
-.servicelogo a > div {
+.servicelogo .icon {
 	transition: transform .3s ease;
 }
 
-.servicelogo a:hover > div {
+.service_link:hover .icon {
 	transform: scale(1.25);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.servicelogo a::before {
+.service_link::before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -53,12 +54,11 @@
 	transition: transform .5s;
 }
 
-.servicelogo a:hover::before {
+.service_link:hover::before {
 	transform-origin: left top;
 	transform: skewX(-45deg) scale(1, 1);
 }
 
-.servicelogo div {
+.icon {
 	position: relative;
-	z-index: 0;
 }
