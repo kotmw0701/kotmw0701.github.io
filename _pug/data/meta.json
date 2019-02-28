@@ -77,5 +77,15 @@
 		"styles": [
 			"animtest.css"
 		]
+	},
+	"/products/change.html": {
+		"title": "席替えのアレ",
+		"description": "席替えのアレ",
+		"styles": [
+			"change.css"
+		],
+		"scripts": [
+			"change.js"
+		]
 	}
 }
