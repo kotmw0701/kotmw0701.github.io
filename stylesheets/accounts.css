@@ -32,6 +32,7 @@
 	height: 5.5rem;
 	line-height: 5.5rem;
 	text-align: center;
+	z-index: 1;
 }
 
 .service_link {
