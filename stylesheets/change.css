@@ -18,7 +18,14 @@ td {
 
 .active {
 	opacity: 0;
+	-webkit-animation: show 1s linear forwards;
 	animation: show 1s linear forwards;
+}
+
+@-webkit-keyframes show {
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes show {

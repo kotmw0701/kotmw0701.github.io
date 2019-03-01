@@ -10,6 +10,7 @@ html, body, main {
 }
 
 main {
+    -webkit-animation: mainback 2s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
     animation: mainback 2s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
 }
 
@@ -42,6 +43,7 @@ footer {
     display: block;
     height: calc(100% + 1px);
     width: 100%;
+    -webkit-animation: 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
     animation: 1.5s cubic-bezier(0.22, 0.82, 0.62, 0.88) 1.5s 1 both;
 }
 
@@ -61,42 +63,50 @@ footer {
 #background *:nth-child(1)::before,
 #background *:nth-child(5)::before {
     border-width: 10vh 10vh 0 0;
+    -webkit-animation-name: back-left, bordercolor;
     animation-name: back-left, bordercolor;
 }
 
 #background *:nth-child(1)::after,
 #background *:nth-child(5)::after {
     border-width: 0 0 10vh 10vh;
+    -webkit-animation-name: back-right, bordercolor;
     animation-name: back-right, bordercolor;
 }
 
 #background *:nth-child(3)::before {
     border-width: 0 10vh 10vh 0;
+    -webkit-animation-name: back-left, bordercolor;
     animation-name: back-left, bordercolor;
 }
 
 #background *:nth-child(3)::after {
     border-width: 10vh 0 0 10vh;
+    -webkit-animation-name: back-right, bordercolor;
     animation-name: back-right, bordercolor;
 }
 
 
 #background *:nth-child(2)::before {
+    -webkit-animation-name: back-left-a, backcolor;
     animation-name: back-left-a, backcolor;
 }
 
 /* afterだけにborder設定しないと白線が消えない */
 #background *:nth-child(2)::after {
     border-width: 1px 0;
+    -webkit-animation-name: back-right-a, backcolor, bordercolor;
     animation-name: back-right-a, backcolor, bordercolor;
 }
 
 #background *:nth-child(4)::before {
+    -webkit-animation-name: back-left-b, backcolor;
     animation-name: back-left-b, backcolor;
 }
 
 #background *:nth-child(4)::after {
     border-width: 1px 0;
+    -webkit-animation-name: back-right-b, backcolor, bordercolor;
     animation-name: back-right-b, backcolor, bordercolor;
 }
 
@@ -113,6 +123,7 @@ footer {
     width: 100%;
     height: 0;
     background-color: black;
+    -webkit-animation: over 1s linear 7s normal;
     animation: over 1s linear 7s normal;
 }
 
@@ -130,6 +141,7 @@ footer {
     width: 60%;
     height: 50%;
     fill: white;
+    -webkit-animation: scp 1s ease 6s 1 alternate forwards;
     animation: scp 1s ease 6s 1 alternate forwards;
 }
 
@@ -143,6 +155,7 @@ footer {
     stroke-width: 1px;
     stroke-dasharray: 175;
     stroke-dashoffset: 175;
+    -webkit-animation: dash 3s ease-out 5s 1 normal forwards;
     animation: dash 3s ease-out 5s 1 normal forwards;
 }
 
@@ -161,12 +174,14 @@ footer {
 .title .no {
     color: black;
     font-size: 15vmin;
+    -webkit-animation: SCP132JPDelay 3s ease 8.5s 1 normal;
     animation: SCP132JPDelay 3s ease 8.5s 1 normal;
 }
 
 .title .oc {
     color: black;
     font-size: 12vmin;
+    -webkit-animation: SCP132JPDelay 3s ease 8.5s 1 normal;
     animation: SCP132JPDelay 3s ease 8.5s 1 normal;
 }
 
@@ -175,6 +190,7 @@ footer {
     width: 70vmin;
     height: calc(70vmin * 1.414);
     background-color: white;
+    -webkit-animation: paperFall 2s cubic-bezier(0.350, 0.715, 0.480, 1.155) 8s 1 normal backwards;
     animation: paperFall 2s cubic-bezier(0.350, 0.715, 0.480, 1.155) 8s 1 normal backwards;
 }
 
@@ -183,6 +199,7 @@ footer {
     height: calc(calc(70vmin * 1.414) / 30);
     width: 90%;
     margin: 0 auto;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: solid 1px black;
 }
@@ -196,6 +213,19 @@ footer {
     margin: auto;
 }
 
+@-webkit-keyframes scp {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        left: 37%;
+    }
+}
+
 @keyframes scp {
     0% {
         opacity: 0;
@@ -206,6 +236,16 @@ footer {
     100% {
         opacity: 1;
         left: 37%;
+    }
+}
+
+@-webkit-keyframes dash {
+    80% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-width: 0;
+        fill: white;
     }
 }
 
@@ -225,34 +265,66 @@ footer {
     }
 } */
 
+@-webkit-keyframes back-left {
+    0% { -webkit-transform: translateX(calc(-100vw - 10vh)); transform: translateX(calc(-100vw - 10vh)); }
+    100% { -webkit-transform: translateX(calc(-49.9vw - calc(10vh / 2))); transform: translateX(calc(-49.9vw - calc(10vh / 2))); }
+}
+
 @keyframes back-left {
-    0% { transform: translateX(calc(-100vw - 10vh)); }
-    100% { transform: translateX(calc(-49.9vw - calc(10vh / 2))); }
+    0% { -webkit-transform: translateX(calc(-100vw - 10vh)); transform: translateX(calc(-100vw - 10vh)); }
+    100% { -webkit-transform: translateX(calc(-49.9vw - calc(10vh / 2))); transform: translateX(calc(-49.9vw - calc(10vh / 2))); }
 }
 /* translateY(-100%)をすると，上にかぶさってくるから */
+@-webkit-keyframes back-right {
+    0% { -webkit-transform: translateX(100vw) translateY(-100%); transform: translateX(100vw) translateY(-100%); }
+    100% { -webkit-transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); }
+}
 @keyframes back-right {
-    0% { transform: translateX(100vw) translateY(-100%); }
-    100% { transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); }
+    0% { -webkit-transform: translateX(100vw) translateY(-100%); transform: translateX(100vw) translateY(-100%); }
+    100% { -webkit-transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); }
+}
+
+@-webkit-keyframes back-left-a {
+    0% { -webkit-transform: translateX(calc(-100vw - 10vh)); transform: translateX(calc(-100vw - 10vh)); }
+    100% { -webkit-transform: translateX(calc(-50vw - calc(10vh / 2))); transform: translateX(calc(-50vw - calc(10vh / 2))); }
 }
 
 @keyframes back-left-a {
-    0% { transform: translateX(calc(-100vw - 10vh)); }
-    100% { transform: translateX(calc(-50vw - calc(10vh / 2))); }
+    0% { -webkit-transform: translateX(calc(-100vw - 10vh)); transform: translateX(calc(-100vw - 10vh)); }
+    100% { -webkit-transform: translateX(calc(-50vw - calc(10vh / 2))); transform: translateX(calc(-50vw - calc(10vh / 2))); }
 }
 /* translateY(-100%)をすると，上にかぶさってくるから */
+@-webkit-keyframes back-right-a {
+    0% { -webkit-transform: translateX(100vw) translateY(-100%); transform: translateX(100vw) translateY(-100%); }
+    100% { -webkit-transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); }
+}
 @keyframes back-right-a {
-    0% { transform: translateX(100vw) translateY(-100%); }
-    100% { transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); }
+    0% { -webkit-transform: translateX(100vw) translateY(-100%); transform: translateX(100vw) translateY(-100%); }
+    100% { -webkit-transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); transform: translateX(calc(49.9vw - calc(10vh / 2))) translateY(-100%); }
+}
+
+@-webkit-keyframes back-left-b {
+    0% { -webkit-transform: translateX(-100vw); transform: translateX(-100vw); }
+    100% { -webkit-transform: translateX(calc(-50vw + calc(10vh / 2))); transform: translateX(calc(-50vw + calc(10vh / 2))); }
 }
 
 @keyframes back-left-b {
-    0% { transform: translateX(-100vw); }
-    100% { transform: translateX(calc(-50vw + calc(10vh / 2))); }
+    0% { -webkit-transform: translateX(-100vw); transform: translateX(-100vw); }
+    100% { -webkit-transform: translateX(calc(-50vw + calc(10vh / 2))); transform: translateX(calc(-50vw + calc(10vh / 2))); }
 }
 /* translateY(-100%)をすると，上にかぶさってくるから */
+@-webkit-keyframes back-right-b {
+    0% { -webkit-transform: translateX(calc(100vw + 10vh)) translateY(-100%); transform: translateX(calc(100vw + 10vh)) translateY(-100%); }
+    100% { -webkit-transform: translateX(calc(49.9vw + calc(10vh / 2))) translateY(-100%); transform: translateX(calc(49.9vw + calc(10vh / 2))) translateY(-100%); }
+}
 @keyframes back-right-b {
-    0% { transform: translateX(calc(100vw + 10vh)) translateY(-100%); }
-    100% { transform: translateX(calc(49.9vw + calc(10vh / 2))) translateY(-100%); }
+    0% { -webkit-transform: translateX(calc(100vw + 10vh)) translateY(-100%); transform: translateX(calc(100vw + 10vh)) translateY(-100%); }
+    100% { -webkit-transform: translateX(calc(49.9vw + calc(10vh / 2))) translateY(-100%); transform: translateX(calc(49.9vw + calc(10vh / 2))) translateY(-100%); }
+}
+
+@-webkit-keyframes bordercolor {
+    0% { border-color: #888 transparent; }
+    100% { border-color: black transparent; }
 }
 
 @keyframes bordercolor {
@@ -260,8 +332,18 @@ footer {
     100% { border-color: black transparent; }
 }
 
+@-webkit-keyframes backcolor {
+    0% { background-color: #888; }
+    100% { background-color: black; }
+}
+
 @keyframes backcolor {
     0% { background-color: #888; }
+    100% { background-color: black; }
+}
+
+@-webkit-keyframes mainback {
+    60% { background-color: white; }
     100% { background-color: black; }
 }
 
@@ -270,9 +352,27 @@ footer {
     100% { background-color: black; }
 }
 
+@-webkit-keyframes over {
+    100% {
+        height: 100%;
+    }
+}
+
 @keyframes over {
     100% {
         height: 100%;
+    }
+}
+
+@-webkit-keyframes SCP132JPDelay {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
@@ -285,6 +385,15 @@ footer {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@-webkit-keyframes paperFall {
+    0% {
+        bottom: 200%;
+    }
+    100% {
+        bottom: 0;
     }
 }
 

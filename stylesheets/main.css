@@ -17,7 +17,12 @@ h1, h2, h3, h4, h5, h6 {
 body {
 	background-color: #eee;
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
@@ -28,15 +33,22 @@ header {
 	z-index: 10;
 	background-color: black;
 	color: white;
+	-webkit-box-shadow: 0 1px 5px 2px gray;
 	box-shadow: 0 1px 5px 2px gray;
 }
 
 
 header .container{
+	-webkit-box-flex: 0;
+	-ms-flex: none;
 	flex: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 90%;
 	margin: 0 auto;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -57,6 +69,8 @@ nav {
 }
 
 nav ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-size: 1.3em;
 	list-style: none;
@@ -76,6 +90,7 @@ nav a, nav p {
 
 nav a {
 	border-bottom: solid transparent 5px;
+	-webkit-transition: border-bottom .3s linear;
 	transition: border-bottom .3s linear;
 }
 
@@ -90,6 +105,8 @@ nav p, nav a:hover {
 /* main */
 
 .root {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 	margin: 0 auto;
 	width: 100%;
@@ -143,6 +160,12 @@ footer .container {
 
 /* animation */
 
+@-webkit-keyframes opening {
+	100% {
+		opacity: .25;
+	}
+}
+
 @keyframes opening {
 	100% {
 		opacity: .25;
@@ -169,6 +192,7 @@ footer .container {
 		top: 55px;
 		width: 100%;
 		background: #444;
+		-webkit-box-shadow: 0 3px 5px -1px gray;
 		box-shadow: 0 3px 5px -1px gray;
 		left: 0;
 	}
@@ -208,7 +232,6 @@ footer .container {
 		width: 100%;
 		left: 0;
 		-webkit-transition: 0.5s ease-in-out;
-		-moz-transition: 0.5s ease-in-out;
 		transition: 0.5s ease-in-out;	
 	}
 	#nav_toggle span:nth-child(1){
@@ -224,7 +247,6 @@ footer .container {
 	.open #nav_toggle span:nth-child(1) {
 		top: 12px;
 	    -webkit-transform: rotate(135deg);
-		-moz-transform: rotate(135deg);
 		transform: rotate(135deg);
 	}
 	.open #nav_toggle span:nth-child(2) {
@@ -234,7 +256,6 @@ footer .container {
 	.open #nav_toggle span:nth-child(3) {
 		top: 12px;
 		-webkit-transform: rotate(-135deg);
-		-moz-transform: rotate(-135deg);
 		transform: rotate(-135deg);
 	}
 }

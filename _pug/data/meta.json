@@ -87,5 +87,6 @@
 		"scripts": [
 			"change.js"
 		]
-	}
+	},
+	"/rapisato/rapisato_sample.html": {}
 }

@@ -1,0 +1,21 @@
+{
+	"global": {
+		"name": "安藤",
+		"image": "image/ando.png",
+		"role": "ビジター",
+		"about": "これはサンプルデータです"
+	},
+	"ことむー": {
+		"name": "ことむー",
+		"image": "image/kotrappi.png",
+		"role": "Webサーバー管理者(コモンメンバー)",
+		"about": "こんにちは，ことむーです。ぷよぐやみんぐしたり音ゲーしたりしてる鳥です。",
+		"service": {
+			"Web": "https://kotmw.com/",
+			"Twitter": "https://twitter.com/intent/user?user_id=2277744186",
+			"Github": "https://github.com/kotmw0701",
+			"Youtube": "https://www.youtube.com/channel/UCYSFdfZodBMbAKZ5BYRt75w",
+			"Steam": "https://steamcommunity.com/id/kotmw/"
+		}
+	}
+}
