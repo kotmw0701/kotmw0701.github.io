@@ -8,6 +8,13 @@
 - ress.css
 - Google Fonts
 
+- gulp
+- gulp-pug
+- gulp-data
+- gulp-pretty-html
+- gulp-postcss
+- autoprefixer
+
 ## 使用したフォント
 
 - Roboto mono (英字フォント)
