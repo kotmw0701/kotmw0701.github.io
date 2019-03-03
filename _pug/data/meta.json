@@ -1,13 +1,13 @@
 {
-    "global": {
+  "global": {
 		"root": "",
         "site_name": "ことむにの物置",
 		"category": "ことむにの物置",
 		"title": "ことむにの物置",
         "type": "website",
-        "url": "https://kotmw0701.github.io",
+        "url": "https://kotmw.com",
         "description": "ことむにのサイトです",
-        "image": "https://kotmw0701.github.io/images/pso20181212_223415_030.png",
+        "image": "https://kotmw.com/images/pso20181212_223415_030.png",
         "twitter_card": "summary",
 		"twitter_site": "@rabikotmw",
 		"use_fontawesome": true,
@@ -15,7 +15,7 @@
 		"styles": [],
 		"scripts_usetemp": true,
 		"scripts": []
-    },
+  },
     "/index.html": {
 		"category": "Home",
 		"title": "自己紹介",
@@ -54,7 +54,7 @@
 	"/products/scp_animation.html": {
 		"title": "SCP CSS Animation",
 		"description": "CSS Animationの練習として制作したページです，まだ途中なので不定期ですがちまちまと更新する予定です。",
-		"image": "https://kotmw0701.github.io/images/scp_animation.png",
+		"image": "https://kotmw.com/images/scp_animation.png",
 		"twitter_card": "summary_large_image",
 		"use_fontawesome": false,
 		"styles_usetemp": false,
