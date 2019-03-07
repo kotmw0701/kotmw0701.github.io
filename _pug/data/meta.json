@@ -1,22 +1,22 @@
 {
-  "global": {
+	"global": {
 		"root": "",
-        "site_name": "ことむにの物置",
+		"site_name": "ことむにの物置",
 		"category": "ことむにの物置",
 		"title": "ことむにの物置",
-        "type": "website",
-        "url": "https://kotmw.com",
-        "description": "ことむにのサイトです",
-        "image": "https://kotmw.com/images/pso20181212_223415_030.png",
-        "twitter_card": "summary",
+		"type": "website",
+		"url": "https://kotmw.com",
+		"description": "ことむにのサイトです",
+		"image": "https://kotmw.com/images/pso20181212_223415_030.png",
+		"twitter_card": "summary",
 		"twitter_site": "@rabikotmw",
 		"use_fontawesome": true,
 		"styles_usetemp": true,
 		"styles": [],
 		"scripts_usetemp": true,
 		"scripts": []
-  },
-    "/index.html": {
+	},
+	"/index.html": {
 		"category": "Home",
 		"title": "自己紹介",
 		"description": "自己紹介ページ。自分が作ったものや，自分についての事をちまちまと書いてます。",
@@ -38,6 +38,14 @@
 		"description": "自分のアカウント一覧。SNS等",
 		"styles": [
 			"accounts.css"
+		]
+	},
+	"/contact.html": {
+		"category": "Contact",
+		"title": "コンタクト",
+		"description": "コンタクトページ",
+		"styles": [
+			"contact.css"
 		]
 	},
 	"/products/index.html": {
@@ -67,7 +75,7 @@
 	"/products/rabiribi_pixelarts.html": {
 		"title": "Rabi-Ribi ドット絵Gif",
 		"description": "Rabi-Ribiはいいぞ，Rabi-Ribiはいいぞ，Rabi-Ribiはいいぞ，SteamやPS4版があるから買おう！　このページはキャラのドット絵のトレースをまとめてるだけのページです",
-		"styles" :[
+		"styles": [
 			"rabiribi.css"
 		]
 	},
