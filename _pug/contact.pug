@@ -4,5 +4,17 @@ block content
     article.contact
         h2.page_subtitle #{title}
         .page_inner
+            form.contact(action="")
+                h3.title コンタクト
+                p.description 出来ればTwitterのDMのほうが楽です(ﾎﾞｿｯ
+                label(for="email") メールアドレス
+                input(id="email" type="text" name="" placeholder="example@email.com")
+                label(for="name") お名前
+                input(id="name" type="text" name="" placeholder="お名前")
+                label(for="title") 件名
+                input(id="title" type="text" name="" placeholder="件名")
+                label(for="message") 内容
+                textarea(id="message" name="" placeholder="お問い合わせ内容")
+                button(type="submit" name="button" value="送信")
             .wrapper
                 iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSe5VJ0sBhHZBinuJVx52k2F3ys0q_H2MzZWKhQ2Nf9MJgmsfQ/viewform?embedded=true" width="640" height="825" frameborder="0" marginheight="0" marginwidth="0") 読み込んでいます...
