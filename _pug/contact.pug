@@ -4,14 +4,10 @@ block content
     article.contact
         h2.page_subtitle #{title}
         .page_inner
-            form.contact(action="https://docs.google.com/forms/d/e/1FAIpQLSe5VJ0sBhHZBinuJVx52k2F3ys0q_H2MzZWKhQ2Nf9MJgmsfQ/formResponse")
-                p.description 出来ればTwitterのDMのほうが楽です(ﾎﾞｿｯ
-                label(for="email") メールアドレス
-                input(id="email" type="text" name="emailAddress" placeholder="example@email.com" required)
-                label(for="name") お名前
-                input(id="name" type="text" name="entry.945318792" placeholder="お名前" required)
-                label(for="title") 件名
-                input(id="title" type="text" name="entry.1114566897" placeholder="件名" required)
-                label(for="message") 内容
-                textarea(id="message" name="entry.1568975502" placeholder="お問い合わせ内容" required)
+            form(action="https://docs.google.com/forms/d/e/1FAIpQLSe5VJ0sBhHZBinuJVx52k2F3ys0q_H2MzZWKhQ2Nf9MJgmsfQ/formResponse")
+                .datas
+                    input(id="email" type="text" name="emailAddress" placeholder="example@email.com" required)
+                    input(id="name" type="text" name="entry.945318792" placeholder="お名前" required)
+                    input(id="title" type="text" name="entry.1114566897" placeholder="件名" required)
+                    textarea(id="message" name="entry.1568975502" placeholder="お問い合わせ内容" required)
                 button(type="submit" name="button" value="送信") 送信

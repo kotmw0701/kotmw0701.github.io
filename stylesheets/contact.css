@@ -1,5 +1,36 @@
 @charset "utf-8";
 
-.contact > *{
+.datas {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.datas > *{
     display: block;
+    width: 80%;
+    margin: 20px auto 0;
+    border: solid gray 1px;
+    border-radius: 4px;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    height: 80px;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    background-color: #777;
+    color: white;
+    width: 100px;
+    margin: 20px auto 0;
+    border-radius: 4px;
 }
