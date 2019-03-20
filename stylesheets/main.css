@@ -94,8 +94,12 @@ nav a {
 	transition: border-bottom .3s linear;
 }
 
-nav p, nav a:hover {
-	border-bottom: solid white 5px;
+nav a:hover {
+	border-bottom: solid lightgray 5px;
+}
+
+nav p {
+	border-bottom: solid #66CCFF 5px;
 }
 
 #nav_toggle {
