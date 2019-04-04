@@ -19,10 +19,6 @@
 	padding: 5px;
 }
 
-.tweets div {
-	text-align: center;
-}
-
 @media screen and (max-width: 500px) {
 	
 	.profile dl {

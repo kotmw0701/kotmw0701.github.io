@@ -173,6 +173,10 @@
 	height: 200px;
 }
 
+.tweets div {
+	text-align: center;
+}
+
 @-webkit-keyframes animBefore{
 	50% { 
 		-webkit-transform: rotate(0deg); 
