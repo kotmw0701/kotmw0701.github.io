@@ -7,7 +7,7 @@
 
 .datas > *{
     display: block;
-    width: 80%;
+    width: 95%;
     margin: 20px auto 0;
     border: solid gray 1px;
     border-radius: 4px;
@@ -22,7 +22,6 @@ textarea {
 }
 
 form {
-    width: 60%;
     margin: 0 auto;
 }
 
@@ -33,4 +32,10 @@ button {
     width: 100px;
     margin: 20px auto 0;
     border-radius: 4px;
+}
+
+@media screen and ( min-width: 700px ) {
+	.datas > *{
+		width: 60%;
+	}
 }
