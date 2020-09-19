@@ -19,6 +19,19 @@
 	padding: 5px;
 }
 
+.main__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 50vh;
+}
+
+.main__announce, .main__description {
+	width: 100%;
+	text-align: center;
+}
+
 @media screen and (max-width: 500px) {
 	
 	.profile dl {
